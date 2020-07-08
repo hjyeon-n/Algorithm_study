@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class problem_2163 {
+public class Solution_2163 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
