@@ -37,10 +37,7 @@ public class 2667_BFS {
 		for(int i = 0; i < n; i++) {
 			for(int j = 0; j < n; j++) {
 				if(map[i][j] == 1 && visited[i][j] == false) {
-					int cnt = bfs(i, j);
-					if (cnt != 0) {
-						list.add(cnt);
-					}
+					list.add(bfs(i, j));
 				}
 			}
 		}
