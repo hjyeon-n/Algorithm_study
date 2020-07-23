@@ -10,34 +10,26 @@ public class Solution_14501 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int num = Integer.parseInt(br.readLine());
 		
-		int[] arr_t = new int[num + 1];
-		int[] arr_p = new int[num + 1];
-		int[] dp = new int[num + 1];
-		
+		int[] arr_t = new int[num + 2];
+		int[] arr_p = new int[num + 2];
+		int[] dp = new int[num + 2];
+
 		for (int i = 1; i <= num; i++) {
 			StringTokenizer st = new StringTokenizer(br.readLine());
-			int period = Integer.parseInt(st.nextToken());
-			int money = Integer.parseInt(st.nextToken());
-			arr_t[i] = period;
-			arr_p[i] = money;
-			dp[i] = money;
+			arr_t[i] = Integer.parseInt(st.nextToken());
+			arr_p[i] = Integer.parseInt(st.nextToken());
 		}
-		
-		for (int i = 2; i <= num; i++) {
-			for (int j = 1; j < i; j++) {
-				if (arr_t[j] <= i - j) {
-					dp[i] = Math.max(arr_p[i] + dp[j], dp[i]);
-				}
+
+		for (int i = num; i > 0; i--) {
+			int day = i + arr_t[i];
+			if (day <= num + 1) {
+				dp[i] = Math.max(arr_p[i] + dp[day], dp[i + 1]);
+			}
+			else {
+				dp[i] = dp[i + 1];
 			}
 		}
-		
-		int max = 0;
-		for (int i = 1; i <= num; i++) {
-			if (i + arr_t[i] <= num + 1) {
-				max = Math.max(dp[i], max);
-			}
-		}
-		
-		System.out.println(max);
+
+		System.out.println(dp[1]);
 	}
 }
