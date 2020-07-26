@@ -1,10 +1,12 @@
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Solution_5585 {	
-	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
+	public static void main(String[] args) throws NumberFormatException, IOException {
 	
-		int money = 1000- scan.nextInt();
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); 
+		int money = 1000- Integer.parseInt(br.readLine());
 		int[] change = {500, 100, 50, 10, 5, 1};
 		int count = 0;
 		

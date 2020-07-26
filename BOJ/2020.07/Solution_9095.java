@@ -1,19 +1,21 @@
-import java.util.Scanner;
-public class Solution_9095 {
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
-	public static void main(String[] args) {
+public class Solution_9095 {
+	public static void main(String[] args) throws NumberFormatException, IOException {
 		// TODO Auto-generated method stub
-		Scanner scan = new Scanner(System.in);
-		int num = scan.nextInt();
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int num = Integer.parseInt(br.readLine());
+		
 		for (int i = 0; i < num; i++) {
-			int x = scan.nextInt();
+			int x = Integer.parseInt(br.readLine());
 			System.out.println(minOp(x));
 		}
 	}
 	
 	public static int minOp (int x) {		
 		int[] dp = new int[x + 1];
-		int ret = 0;
 		
 		dp[1] = 1;
 		

@@ -1,14 +1,17 @@
-import java.util.Scanner;
-public class Solution_1103 {	
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Solution_1003 {	
 	static int zero[];
 	static int one[];
-	public static void main(String[] args) {
+	public static void main(String[] args) throws NumberFormatException, IOException {
 		// TODO Auto-generated method stub
-		Scanner scan = new Scanner(System.in);
-		int loop = scan.nextInt();
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int loop = Integer.parseInt(br.readLine());
 		
 		for (int i = 0; i < loop; i++) {
-			int num = scan.nextInt();
+			int num = Integer.parseInt(br.readLine());
 			int memo[] = new int[num + 1];
 			zero = new int[num + 1];
 			one = new int[num + 1];
