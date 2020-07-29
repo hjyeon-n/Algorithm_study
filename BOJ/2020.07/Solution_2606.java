@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
-public class Main {	
+public class Solution_2606 {	
 	static int[][] map;
 	static boolean[]visited;
     static int n;
