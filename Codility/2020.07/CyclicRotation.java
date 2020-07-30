@@ -1,4 +1,4 @@
-public class Main {
+public class CyclicRotation {
 	public int[] solution(int[] A, int K) {
         // write your code in Java SE 8
 		
