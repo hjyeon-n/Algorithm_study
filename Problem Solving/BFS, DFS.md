@@ -32,9 +32,7 @@
 
 #### #유기농 배추
 
-소스 코드
-
-[유기농 배추 ]: https://github.com/hjyeon-n/Algorithm_study/tree/master/BOJ/2020.07/Solution_1012
+[유기농 배추 소스 코드](https://github.com/hjyeon-n/Algorithm_study/tree/master/BOJ/2020.07/Solution_1012 )
 
 
 
@@ -50,9 +48,7 @@
 
 #### #단지 번호 붙이기
 
-소스 코드
-
-[단지 번호 붙이기]: https://github.com/hjyeon-n/Algorithm_study/tree/master/BOJ/2020.07/Solution_2667
+[단지 번호 붙이기 소스 코드](https://github.com/hjyeon-n/Algorithm_study/tree/master/BOJ/2020.07/Solution_2667  )
 
 
 
@@ -70,9 +66,7 @@
 
 #### #적록색약
 
-소스코드
-
-[적록색약 ]: https://github.com/hjyeon-n/Algorithm_study/tree/master/BOJ/2020.07/Solution_10026
+[적록색약 소스 코드](https://github.com/hjyeon-n/Algorithm_study/tree/master/BOJ/2020.07/Solution_10026   )
 
 
 
