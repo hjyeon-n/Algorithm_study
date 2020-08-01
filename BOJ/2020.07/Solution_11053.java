@@ -19,11 +19,12 @@ public class Solution_11053 {
 			arr[i] = Integer.parseInt(st.nextToken());
 		}
 		
-		for (int i = 1; i <= num; i++) {
+		dp[1] = 1;
+		for (int i = 2; i <= num; i++) {
 			dp[i] = 1;
-			for (int j = 1; j <= i; j++) {
-				if (arr[i] > arr[j] && dp[i] <= dp[j]) {
-					dp[i] = dp[j] + 1;
+			for (int j = 1; j < i; j++) {
+				if (arr[i] > arr[j]) {
+					dp[i] = Math.max(dp[i], dp[j] + 1);
 				}
 			}
 		}
