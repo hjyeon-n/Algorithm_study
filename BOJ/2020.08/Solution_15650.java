@@ -29,7 +29,7 @@ public class Solution_15650 {
 	 
 		for (int i = idx; i < n; i++) {
 			arr[depth] = i + 1;	
-			dfs(n, m, depth + 1, i);
+			dfs(n, m, depth + 1, i + 1);
 		}
 	}
 }
