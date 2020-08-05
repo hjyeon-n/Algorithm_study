@@ -11,7 +11,7 @@
 
 [Codility 소스코드](https://github.com/hjyeon-n/Algorithm_study/tree/master/Codility/2020.07)
 
-[문제 풀이]([https://github.com/hjyeon-n/Algorithm_study/tree/master/Problem%20Solving/2020.07](https://github.com/hjyeon-n/Algorithm_study/tree/master/Problem Solving/2020.07))
+[문제 풀이](https://github.com/hjyeon-n/Algorithm_study/tree/master/Problem%20Solving/2020.07)
 
 
 
@@ -19,4 +19,4 @@
 
 [BOJ 소스코드](https://github.com/hjyeon-n/Algorithm_study/tree/master/BOJ/2020.08)
 
-[문제 풀이]([https://github.com/hjyeon-n/Algorithm_study/tree/master/Problem%20Solving/2020.08](https://github.com/hjyeon-n/Algorithm_study/tree/master/Problem Solving/2020.08))
+[문제 풀이](https://github.com/hjyeon-n/Algorithm_study/tree/master/Problem%20Solving/2020.08)
