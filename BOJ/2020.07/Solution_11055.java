@@ -21,13 +21,12 @@ public class Solution_11055 {
 		
 		dp[0] = 0;
 		for (int i = 1; i <= num; i++) {
-			int idx = 0;
+			dp[i] = arr[i];
 			for (int j = 1; j < i; j++) {
-				if (arr[i] > arr[j] && dp[idx] < dp[j]) {
-					idx = j;
+				if (arr[i] > arr[j]) {
+					dp[i] = Math.max(dp[j] + arr[i], dp[i]);
 				}
 			}
-			dp[i] = dp[idx] + arr[i];
 		}
 		Arrays.sort(dp);
 		System.out.println(dp[num]);
