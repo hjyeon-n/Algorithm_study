@@ -11,9 +11,10 @@
 
 ### BFS로 푼 문제
 
-| 문제 번호 | 이름              |
-| --------- | ----------------- |
-| 7569      | [토마토](#토마토) |
+| 문제 번호 | 이름                 |
+| --------- | -------------------- |
+| 7569      | [토마토](#토마토)    |
+| 2644      | [촌수계산](촌수계산) |
 
 <br>
 
@@ -66,3 +67,24 @@
 [토마토 소스 코드](https://github.com/hjyeon-n/Algorithm_study/blob/master/BOJ/2020.08/Solution_7569.java  ) 
 
 2차원 배열의 [토마토(7576)](https://github.com/hjyeon-n/Algorithm_study/blob/master/BOJ/2020.07/Solution_7576.java)에서 3차원 배열로 바꿔주면 된다🍅
+
+<br>
+
+<hr>
+
+#### #촌수계산
+
+[촌수계산 소스 코드](https://github.com/hjyeon-n/Algorithm_study/blob/master/BOJ/2020.08/Solution_2644.java)👨‍👩‍👧
+
+[바이러스](https://github.com/hjyeon-n/Algorithm_study/tree/master/BOJ/2020.07/Solution_2606) 문제처럼 visted 배열이 일차원이어야 하는 문제. 단, 바이러스 문제의 경우 1번 컴퓨터부터 시작해서 단순히 연결된 컴퓨터를 방문하고 수를 세면 되지만 촌수계산 문제는 시작점부터 끝점까지의 연결 수를 봐야 함.
+
+1. 시작점에 연결되어 있는 모든 정점을 큐에 넣고  그 정점에서부터 도착점까지 몇 번에 걸쳐 가는지는 visited 배열을 이용하면 된다.
+2. visited 배열에 수를 더할 때도 단순히 1을 더하는 게 아니라 시작점부터 끝점까지 연결이 돼야 한다는 점을 주의해서 visited[시작점]에 1을 더해야 한다. 
+3. 모든 bfs가 끝난 후 visited[end] 값을 출력하면 된다. 이때 초기로 설정했던 0인 경우, 친척관계가 없기 때문에 -1을 출력하면 된다.
+
+
+
+
+
+
+
