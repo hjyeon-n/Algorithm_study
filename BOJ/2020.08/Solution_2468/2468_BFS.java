@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main {
+public class 2468_BFS {
 	static int n;
 	static int max;
 	static int[][] map;
