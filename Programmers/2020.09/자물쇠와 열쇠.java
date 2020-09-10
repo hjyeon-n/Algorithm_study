@@ -21,8 +21,8 @@ public class Main {
         for (int t = 0; t < 4; t++) {
             key = rotate(key);
             
-            for(int a = 0; a < n * 2; a++) {
-                for(int b = 0; b < n * 2; b++) {
+            for(int a = 0; a < map.length - m; a++) {
+                for(int b = 0; b < map.length - m; b++) {
                     for(int i = 0; i < m; i++) {
                         for(int j = 0; j < m; j++) {
                             map[a + i][b + j] += key[i][j];
@@ -58,8 +58,8 @@ public class Main {
     public static boolean isUnlock(int[][] newLock) {
         int cnt = 0;
         int len = newLock.length / 3;
-        for(int i = len; i < len * 2; i++) {
-            for(int j = len; j < len * 2; j++) {
+        for(int i = len; i < newLock.length - len; i++) {
+            for(int j = len; j < newLock.length - len; j++) {
                 if(newLock[i][j] == 1) {
                     cnt++;
                 }
