@@ -264,6 +264,7 @@ dp 배열을 2차원 배열로 선언해서 i 자리에는 자릿수, j에는 �
 <br>
 
 <hr>
+
 ⭐⭐⭐⭐⭐
 
 #### #가장 긴 증가하는 부분 수열 
@@ -279,8 +280,6 @@ dp 배열을 2차원 배열로 선언해서 i 자리에는 자릿수, j에는 �
 <br>
 
 <hr>
-
-
 #### #1, 2, 3 더하기
 
 [1, 2, 3 더하기 소스 코드](https://github.com/hjyeon-n/Algorithm_study/blob/master/BOJ/2020.07/Solution_9095.java)
@@ -302,8 +301,6 @@ dp 공부 시작한지 얼마 안 됐을 때 풀었던 문제.
 <br>
 
 <hr>
-
-
 #### #타일링
 
 [타일링 소스 코드](https://github.com/hjyeon-n/Algorithm_study/blob/master/BOJ/2020.07/Solution_1793.java)
@@ -319,8 +316,6 @@ dp 공부 시작한지 얼마 안 됐을 때 풀었던 문제.
 <br>
 
 <hr>
-
-
 #### #가장 긴 감소하는 부분 수열
 
 [가장 긴 감소하는 부분 수열 소스 코드](https://github.com/hjyeon-n/Algorithm_study/blob/master/BOJ/2020.07/Solution_11722.java)
@@ -330,8 +325,6 @@ dp 공부 시작한지 얼마 안 됐을 때 풀었던 문제.
 <br>
 
 <hr>
-
-
 #### #다리 놓기
 
 [다리 놓기 소스 코드](https://github.com/hjyeon-n/Algorithm_study/blob/master/BOJ/2020.07/Solution_1010.java)
@@ -375,6 +368,7 @@ M이 3인 경우에 dp[2] [3]은 하나의 다리가 이미 결정됐다고 가�
 <br>
 
 <hr>
+
 ⭐⭐⭐⭐⭐
 
 #### #퇴사 
@@ -396,8 +390,6 @@ M이 3인 경우에 dp[2] [3]은 하나의 다리가 이미 결정됐다고 가�
 <br>
 
 <hr>
-
-
 #### #1로 만들기
 
 [1로 만들기 소스 코드](https://github.com/hjyeon-n/Algorithm_study/tree/master/BOJ/2020.07/Solution_1463)
@@ -427,8 +419,6 @@ M이 3인 경우에 dp[2] [3]은 하나의 다리가 이미 결정됐다고 가�
 <br>
 
 <hr>
-
-
 #### #초콜릿 자르기
 
 [초콜릿 자르기 소스 코드](https://github.com/hjyeon-n/Algorithm_study/blob/master/BOJ/2020.07/Solution_2163.java)
@@ -452,8 +442,6 @@ N이 1이 아니라면 i를 1로 만들기 위해 계속 쪼개는 과정을 반
 <br>
 
 <hr>
-
-
 #### #정수 삼각형
 
 [정수 삼각형 소스 코드](https://github.com/hjyeon-n/Algorithm_study/blob/master/BOJ/2020.07/Solution_1932.java)
@@ -471,8 +459,6 @@ N이 1이 아니라면 i를 1로 만들기 위해 계속 쪼개는 과정을 반
 <br>
 
 <hr>
-
-
 #### #합분해
 
 [합분해 소스 코드](https://github.com/hjyeon-n/Algorithm_study/blob/master/BOJ/2020.07/Solution_2225.java)
@@ -590,6 +576,14 @@ memoization을 처음 배웠을 땐 이게 뭔가 싶었는데 지금도 약간�
 만약 THA와 TH를 비교한다고 했을 때, A와 H는 서로 다르기 때문에 하나는 버려야 한다. 이때 LCS를 구하는 것이기 때문에 TH와 TH를 비교하는 경우와 THA와 T를 비교하는 경우 중 더 긴 LCS의 길이가 THA와 TH의 LCS 길이가 된다.
 
 ✔ 점화식은 가리키는 문자가 같지 않을 때 c[i] [j] = Math.max(c[i - 1] [j], c[i] [j - 1]), 같을 때는 c[i] [j] = c[i - 1] [j - 1] + 1
+
+🖐  잠깐만! 왜 c[i - 1] [j], c[i] [j - 1] 같은 식이 나오는 거지?
+
+![image](https://user-images.githubusercontent.com/62419307/93159383-02cec500-f749-11ea-95cd-ec4cd17220af.png)
+
+<br>
+
+![image](https://user-images.githubusercontent.com/62419307/93159416-11b57780-f749-11ea-90ce-966310b5fabe.png)
 
 <br>
 
