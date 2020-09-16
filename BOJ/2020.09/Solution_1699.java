@@ -1,13 +1,13 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-public class Solution_1699 {
+public class Main {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		// TODO Auto-generated method stub
 	
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int n = Integer.parseInt(br.readLine());
-		long[] dp = new long[100001];
+		int[] dp = new int[100001];
 		
 		for (int i = 1; i <= n; i++) {
 			dp[i] = Integer.MAX_VALUE;
@@ -24,10 +24,10 @@ public class Solution_1699 {
 				cnt++;
 				continue;
 			}
-			long tmp = cnt;
+			int tmp = cnt;
 			while (tmp > 1) {
-				long val = tmp * tmp;
-				dp[i] = Math.min(dp[i], i / val + dp[(int) (i % val)]);
+				int val = tmp * tmp;
+				dp[i] = Math.min(dp[i], i / val + dp[(i % val)]);
 				tmp--;
 			}
 		}
