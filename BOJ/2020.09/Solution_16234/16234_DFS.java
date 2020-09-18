@@ -1,14 +1,14 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.ArrayList;
 import java.util.StringTokenizer;
-public class Solution_16234 {
+public class 16234_DFS {
 	static int[][] map;
 	static int[][] visited; 
 	static int N, L, R;
 	static int cnt, sum;
+	static ArrayList<Location> list;
 	private static int dx[] = {0, 0, 1, -1};
     private static int dy[] = {1, -1, 0, 0};
     
@@ -33,12 +33,14 @@ public class Solution_16234 {
 
 		while (true) {
 			visited = new int[N][N];
-			
 			int stop = 0;
 			for (int i = 0; i < N; i++) {
 				for (int j = 0; j < N; j++) {
 					if (visited[i][j] == 0) {
-						bfs(i, j);
+						list = new ArrayList<Location>();
+						sum = map[i][j];
+						cnt = 1;
+						dfs(i, j);
 						fillVisited();
 						stop++;
 					}
@@ -52,43 +54,28 @@ public class Solution_16234 {
 		}
 	}
 
-	public static void bfs(int x, int y) {
-		Queue<Location> queue = new LinkedList<Location>();
-		queue.add(new Location(x, y));
+	public static void dfs(int x, int y) {
 		visited[x][y] = 1;
-		sum = map[x][y];
-		cnt = 1;
-		
-		while(!queue.isEmpty()) {
-			Location loc = queue.poll();
-			int loc_x = loc.x;
-			int loc_y = loc.y;
-			
-			for(int i = 0; i < 4; i++) {
-				int nx = loc_x + dx[i];
-				int ny = loc_y + dy[i];
+		list.add(new Location(x, y));
+		for(int i = 0; i < 4; i++) {
+			int nx = x + dx[i];
+			int ny = y + dy[i];
 
-				if(nx >= 0 && ny >= 0 && nx < N && ny < N){
-					int val = Math.abs(map[nx][ny] - map[loc_x][loc_y]);
-					if (val >= L && val <= R && visited[nx][ny] == 0) {
-						sum += map[nx][ny];
-						cnt++;
-						visited[nx][ny] = 1;
-						queue.add(new Location(nx, ny));
-					}
+			if(nx >= 0 && ny >= 0 && nx < N && ny < N){
+				int val = Math.abs(map[nx][ny] - map[x][y]);
+				if (val >= L && val <= R && visited[nx][ny] == 0) {
+					sum += map[nx][ny];
+					cnt++;
+					dfs(nx, ny);
 				}
-			}			
+			}
 		}
 	}
 	
 	public static void fillVisited() {
-		for (int i = 0; i < N; i++) {
-			for (int j = 0; j < N; j++) {
-				if (visited[i][j] == 1) {
-					map[i][j] = sum / cnt;
-					visited[i][j] = -1;
-				}
-			}
+		for (int i = 0; i < list.size(); i++) {
+			Location loc = list.get(i);
+			map[loc.x][loc.y] = sum / cnt;
 		}
 	}
 }
