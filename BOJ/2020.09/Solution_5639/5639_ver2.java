@@ -1,7 +1,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-public class Solution_5639 {    
+public class Main {    
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		// TODO Auto-generated method stub
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -15,39 +15,21 @@ public class Solution_5639 {
 		postorder(root);
 	}
 	
-	static Node insertNode (Node root, int value) {
-		Node t = root; // 삽입할 위치
-		Node p = null; // 상위 노드 참조
-
-		while(t != null){
-			if(t.data == value) {
-				return t;
-			}
-
-			p = t;
-
-			if(p.data > value) {
-				t = p.left;
-			}
-			else {
-				t = p.right;
-			}
-		}
-
-		Node node = new Node(value);
-
-		if(p != null){ 
-			if(p.data > value) {
-				p.left = node;
-			}
-			else {
-				p.right = node;
-			}
-		} 
-		else {
-			root = node;
-		}
-		return root; 
+	static Node insertNode (Node node, int data) {
+		Node current = null;
+		
+        if(node == null) {
+            return new Node(data);
+        }
+        
+        if(node.data > data) {
+            current = insertNode(node.left, data);
+            node.left = current;
+        }else {
+            current = insertNode(node.right, data);
+            node.right = current;
+        }
+        return node; 
 	}
 	
 	public static void postorder(Node node) {
