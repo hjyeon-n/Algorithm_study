@@ -14,6 +14,7 @@
 | [뉴스 클러스터링](#뉴스-클러스터링) |
 | [프렌즈4블록](#프렌즈4블록)         |
 | [길 찾기 게임](#길-찾기-게임)       |
+| [K번째수](#K번째수)                 |
 
 <br>
 
@@ -480,7 +481,19 @@ ver2의 코드는 더 간단하다.
 
  comparator를 별도로 정리하니까 이해가 쉬워서 금방 풀 수 있었다. 트리 삽입 과정에 대한 설명은 [여기](https://github.com/hjyeon-n/Algorithm_study/blob/master/Problem%20Solving/2020.09/Data%20Structure.md#%EC%9D%B4%EC%A7%84-%EA%B2%80%EC%83%89-%ED%8A%B8%EB%A6%AC)에서 확인할 수 있다.
 
+<br>
 
+<hr>
+
+#### #K번째수
+
+[K번째수 소스 코드](https://github.com/hjyeon-n/Algorithm_study/tree/master/Programmers/2020.09/K%EB%B2%88%EC%A7%B8%EC%88%98)
+
+프로그래머스에서 SQL을 제외하고 처음으로 카카오 기출 문제가 아닌 문제를 풀어봤다.
+
+쉬운 문제였고 여기서 새로 알게 된 점은 Arrays.copyOfRange(배열, 시작 인덱스, 마지막 인덱스) 함수! (이때 시작인덱스는 0부터 시작).
+
+정렬은 Arrays.sort를 이용했다.
 
 
 
