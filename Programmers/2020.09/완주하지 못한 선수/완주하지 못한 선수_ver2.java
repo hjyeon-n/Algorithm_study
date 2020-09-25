@@ -2,8 +2,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Programmers {
-	static ArrayList<Integer> preorder;
-	static ArrayList<Integer> postorder;
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String[] participant = {"mislav", "stanko", "mislav", "ana"};

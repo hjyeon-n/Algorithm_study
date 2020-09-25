@@ -2,8 +2,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Programmers {
-	static ArrayList<Integer> preorder;
-	static ArrayList<Integer> postorder;
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] arr = {1, 5, 2, 6, 3, 7, 4};

@@ -1,8 +1,6 @@
 import java.util.ArrayList;
 
 public class Programmers {
-	static ArrayList<Integer> preorder;
-	static ArrayList<Integer> postorder;
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] answers = {1, 2, 3, 4, 5};
