@@ -9,10 +9,10 @@ public class Programmers {
         int[] answer = new int[2];
         int rslt = brown + yellow;
 
-        for(int i = 3; i <= rslt; i++) {
+        for(int i = 1; i <= rslt; i++) {
             if(rslt % i == 0){
                 int width = rslt / i;    
-                int height = rslt / width;    
+                int height = i;    
 
                 int a = width - 2;    
                 int b = height - 2;    
@@ -20,6 +20,7 @@ public class Programmers {
                 if(a * b == yellow && width >= height){
                     answer[0] = width;
                     answer[1] = height;
+                    break;
                 }
             }
         }
