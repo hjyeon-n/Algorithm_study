@@ -211,7 +211,7 @@ BFS를 실행하기 전, 현재층과 목표층을 비교한 뒤 같으면 0을 
 <br>
 
 <hr>
-#### #카카오 프렌즈 컬러링북
+
 #### #카카오 프렌즈 컬러링북
 
 [컬러링북 소스 코드](https://github.com/hjyeon-n/Algorithm_study/blob/master/Programmers/2020.08/카카오프렌즈 컬러링북.java)

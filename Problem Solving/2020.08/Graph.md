@@ -14,7 +14,7 @@
 
 [최소 스패닝 트리 소스 코드](https://github.com/hjyeon-n/Algorithm_study/blob/master/BOJ/2020.08/Solution_1197.java)
 
-나는 크루스칼 알고리즘으로 풀었고, 크루스칼을 구현해 보는 건 처음이라 다른 사람의 풀이를 참고했다. [알고리즘 개념](https://github.com/hjyeon-n/Algorithm_study/blob/master/Problem Solving/MST.md)은 따로 정리해 두었으니 설명은 생략한다.
+나는 크루스칼 알고리즘으로 풀었고, 크루스칼을 구현해 보는 건 처음이라 다른 사람의 풀이를 참고했다. [알고리즘 개념](https://github.com/hjyeon-n/Algorithm_study/blob/master/Problem%20Solving/MST.md)은 따로 정리해 두었으니 설명은 생략한다.
 
 <br>
 
