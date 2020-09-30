@@ -1,8 +1,6 @@
 import java.util.HashMap;
 import java.util.Map;
 public class Main {
-	private static Map<String, Integer> cache = new HashMap<>();
-
 	public static void main(String args[]){
 		String[] words = {"frodo", "front", "frost", "frozen", "frame", "kakao"};
 		String[] queries = {"fro??", "????o", "fr???", "fro???", "pro?"};
@@ -12,121 +10,110 @@ public class Main {
 		}
 	}
 
-
-	public static int[] solution(String[] words, String[] queries) {
-		int[] answer = new int[queries.length];
-
-		Trie trie = makeTrie(words, false);
-		Trie reversTrie = makeTrie(words, true);
-
-		for (int i = 0; i < queries.length; i++) {
-			if (cache.containsKey(queries[i])) {
-				answer[i] = cache.get(queries[i]);
-				continue;
+	public static int[] solution(String[] words, String[] queries) { 
+		Trie[] tries = new Trie[100001]; 
+		
+		for (String word : words) { 
+			int len = word.length(); 
+			if (tries[len] == null) {
+				tries[len] = new Trie();
 			}
-
-			int matchCount = 0;
-			if (isMaterQuery(queries[i])) {
-				matchCount = trie.getCount(queries[i].length() + "?");
-			} else {
-				if (queries[i].charAt(0) == '?') {
-					matchCount = reversTrie.getCount(makeWordWithLength(queries[i], true));
-				} else {
-					matchCount = trie.getCount(makeWordWithLength(queries[i], false));
-				}
+			tries[len].insert(word); 
+		} 
+		
+		int[] answer = new int[queries.length]; 
+		
+		for (int i = 0; i < queries.length; i++) { 
+			int len = queries[i].length(); 
+			
+			if (tries[len] == null) {
+				answer[i] = 0; 
 			}
-			answer[i] = matchCount;
-			cache.put(queries[i], matchCount);
+			else {
+				answer[i] = tries[len].getCount(queries[i]);
+			}
+		} 
+		return answer; 
+	} 
+} 
+
+class Trie { 
+	Node front; 
+	Node back; 
+	Trie() { 
+		this.front = new Node(); 
+		this.back = new Node(); 
+	} 
+	
+	public void insert(String word) {
+		insertFront(word); 
+		insertBack(word); 
+	} 
+	
+	private void insertFront(String word) {
+		Node node = front; 
+		for (int i = 0; i < word.length(); i++) {
+			node.count++; 
+			node = node.children.computeIfAbsent(word.charAt(i), c -> new Node()); 
+		} 
+	} 
+	
+	private void insertBack(String word) { 
+		Node node = back; 
+		
+		for (int i = word.length() - 1; i >= 0; i--) { 
+			node.count++; 
+			node = node.children.computeIfAbsent(word.charAt(i), c -> new Node()); 
+		} 
+	} 
+	
+	public int getCount(String query) { 
+		if (query.charAt(0) == '?') { 
+			return getCountFromBack(query);
 		}
-
-		return answer;
-	}
-
-	public static Trie makeTrie(String[] words, Boolean isReversed) {
-		Trie trie = new Trie();
-		for (String word : words) {
-			String wordWithLength = makeWordWithLength(word, isReversed);
-			trie.insert(wordWithLength);
+		else { 
+			return getCountFromFront(query); 
 		}
-		trie.setLeftNodeCount(trie.getRootNode());
-		return trie;
-	}
+	} 
+	
+	private int getCountFromFront(String query) { 
+		Node node = front; 
+		
+		for (int i = 0; i < query.length(); i++) { 
+			if (query.charAt(i) == '?') {
+				break;
+			}
+			
+			if (!node.children.containsKey(query.charAt(i))) {
+				return 0; 
+			}
+			
+			node = node.children.get(query.charAt(i)); 
+		} 
+		return node.count; 
+	} 
+	
+	private int getCountFromBack(String query) {
+		Node node = back; 
+		
+		for (int i = query.length() - 1; i >= 0; i--) {
+			if (query.charAt(i) == '?') { 
+				break;
+			}
+			if (!node.children.containsKey(query.charAt(i))) {
+				return 0; 
+			}
+			node = node.children.get(query.charAt(i)); 
+		} 
+		return node.count; 
+	} 
+} 
 
-	private static String makeWordWithLength(String word, Boolean isReversed) {
-		StringBuilder builder = new StringBuilder(word);
-		if (isReversed) {
-			builder.reverse();
-		}
-		return builder.insert(0, word.length()).toString();
-	}
-
-	private static boolean isMaterQuery(String query) {
-		return query.charAt(0) == '?' & query.charAt(query.length() - 1) == '?';
+class Node {
+	Map<Character, Node> children; 
+	int count; 
+	Node(){ 
+		this.children = new HashMap<>(); 
+		this.count = 0;
 	}
 }
-
-	class Trie {
-		private TrieNode rootNode;
-
-		public Trie() {
-			this.rootNode = new TrieNode();
-		}
-
-		void insert(String word) {
-			TrieNode thisNode = this.rootNode;
-			for (int i = 0; i < word.length(); i++) {
-				thisNode = thisNode.getChildNode().computeIfAbsent(word.charAt(i), x -> new TrieNode());
-			}
-		}
-
-		public void setLeftNodeCount(TrieNode node) {
-			HashMap<Character, TrieNode> childMap = node.getChildNode();
-			if (childMap.size() == 0) {
-				return;
-			}
-			for (TrieNode childNode : childMap.values()) {
-				setLeftNodeCount(childNode);
-			}
-			int count = 0;
-			for (TrieNode childNode : childMap.values()) {
-				count += childNode.getValue();
-			}
-			node.setValue(count);
-		}
-
-		public int getCount(String query) {
-			TrieNode thisNode = this.rootNode;
-			for (int i = 0; i < query.length(); i++) {
-				char character = query.charAt(i);
-				if (character == '?') {
-					break;
-				}
-				thisNode = thisNode.getChildNode().get(character);
-				if (thisNode == null) {
-					return 0;
-				}
-			}
-			return thisNode.getValue();
-		}
-
-		public TrieNode getRootNode() {
-			return rootNode;
-		}
-	}
-
-	class TrieNode {
-		private final HashMap<Character, TrieNode> childNode = new HashMap<>();
-		private int value = 1;
-
-		public HashMap<Character, TrieNode> getChildNode() {
-			return childNode;
-		}
-
-		public void setValue(int value) {
-			this.value = value;
-		}
-
-		public int getValue() {
-			return value;
-		}
-	}
