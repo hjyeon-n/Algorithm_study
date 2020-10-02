@@ -93,7 +93,7 @@
 
 #### #이진 검색 트리
 
-[이진 검색 트리 소스 코드](https://github.com/hjyeon-n/Algorithm_study/blob/master/BOJ/2020.09/Solution_5639.java)
+[이진 검색 트리 소스 코드](https://github.com/hjyeon-n/Algorithm_study/tree/master/BOJ/2020.09/Solution_5639)
 
 EOF 처리에서 제일 오래 걸린 문제... 분명 맞는데 자꾸 무한 루프 돌길래 그냥 제출했더니 채점이 되더라💢
 
