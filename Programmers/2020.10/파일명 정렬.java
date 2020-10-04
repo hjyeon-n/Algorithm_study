@@ -21,8 +21,8 @@ public class Programmers {
         }
         
         for (int i = 0; i < len; i++) {
-            String str = files[i];
-            int str_len = str.length();
+            String name = files[i];
+            int str_len = name.length();
             
             int j;
             boolean flag = true;
@@ -30,7 +30,7 @@ public class Programmers {
             String number = "";
             String tail = "";
             for (j = 0; j < str_len; j++) {
-                char c = str.charAt(j);
+                char c = name.charAt(j);
                 if (flag && !list.contains(c)) {
                     head += String.valueOf(c);
                 }
@@ -47,11 +47,11 @@ public class Programmers {
             }
             
             while (j < str_len){
-                tail += String.valueOf(str.charAt(j));
+                tail += String.valueOf(name.charAt(j));
                 j++;
             }
             
-            names[i] = new FileName(str, head, number, Integer.parseInt(number), tail);
+            names[i] = new FileName(name, head, number, Integer.parseInt(number), tail);
         }
         
         Arrays.sort(names, new Comparator<FileName>() {
