@@ -7,8 +7,9 @@
 <br>
 
 <hr>
-
 #### #주사위 굴리기
+
+[주사위 굴리기 소스 코드](https://github.com/hjyeon-n/Algorithm_study/blob/master/BOJ/2020.10/Solution_14499.java)
 
 정말 오랫동안 풀었다...😫 예전에 풀려고 시도했다가 문제도 이해 안 돼서 미루다가 오늘 결국 풀었는데 이번에도 문제 이해가 힘들어서 각티슈에 숫자 써서 직접 돌려봤다...😇
 
