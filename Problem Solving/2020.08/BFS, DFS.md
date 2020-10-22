@@ -31,7 +31,7 @@
 
 | 문제 번호 | 이름                                                         |
 | --------- | ------------------------------------------------------------ |
-| 1937      | [욕심쟁이 판다](https://github.com/hjyeon-n/Algorithm_study/blob/master/Problem Solving/2020.08/Dynamic Programming.md) (풀이는 DP에) |
+| 1937      | [욕심쟁이 판다](https://github.com/hjyeon-n/Algorithm_study/blob/master/Problem%20Solving/2020.08/Dynamic%20Programming.md#%EC%9A%95%EC%8B%AC%EC%9F%81%EC%9D%B4-%ED%8C%90%EB%8B%A4) (풀이는 DP에) |
 
 <br>
 
