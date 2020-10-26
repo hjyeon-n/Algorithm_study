@@ -16,7 +16,7 @@ class MissingInteger {
 					answer = A[i] + 1;
 				}
 				if (A[i] > answer) {
-					continue;
+					break;
 				}
 			}
 		}
