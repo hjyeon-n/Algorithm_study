@@ -91,7 +91,7 @@ for (int k = 0; k < n; k++) {
 }
 ```
 
-
+[참고](https://blog.naver.com/ndb796/221234427842?viewType=pc)
 
 
 
