@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Solution_9205 {
+public class 9205_BFS {
 	static int n;
 	static int[][] dist;
 	static boolean[] visited;
