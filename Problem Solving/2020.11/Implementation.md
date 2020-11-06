@@ -1,16 +1,19 @@
 # Implementation
 
-| 문제 번호 | 이름                            |
-| --------- | ------------------------------- |
-| 17406     | [배열 돌리기 4](#배열-돌리기-4) |
+| 문제 번호 | 이름                             |
+| --------- | -------------------------------- |
+| 17406     | [배열 돌리기 4](#배열-돌리기-4)⭐ |
 
 <br>
 
 <hr>
+⭐⭐⭐⭐⭐
 
 #### 배열 돌리기 4
 
 [배열 돌리기 4 소스 코드](https://github.com/hjyeon-n/Algorithm_study/blob/master/BOJ/2020.11/Solution_17406.java)
+
+삼성 A형 기출문제이다. 모르고 풀었는데 코테에서 많이 나오는 유형이라고 하니 잘 알아두자!
 
 생각보다 배열 돌리는 문제는 조금 까다로운 것 같다... [미세먼지 안녕!](https://github.com/hjyeon-n/Algorithm_study/blob/master/Problem%20Solving/2020.10/Implementation.md#%EB%AF%B8%EC%84%B8%EB%A8%BC%EC%A7%80-%EC%95%88%EB%85%95)에서도 헤맸는데 이번에도 조금 헷갈렸다.😢
 
