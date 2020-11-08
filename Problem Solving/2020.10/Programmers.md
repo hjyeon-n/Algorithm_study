@@ -1,23 +1,23 @@
 # Programmers
 
-| 문제 이름                                   |
-| ------------------------------------------- |
-| [튜플](#튜플)                               |
-| [n진수 게임](#n진수-게임)                   |
-| [압축](#압축)                               |
-| [파일명 정렬](#파일명-정렬)                 |
-| [기능개발](#기능개발)                       |
-| [다리를 지나는 트럭](#다리를-지나는-트럭)   |
-| [프린터](#프린터)                           |
-| [체육복](#체육복)                           |
-| [베스트앨범](#베스트앨범)                   |
-| [네트워크](#네트워크)                       |
-| [구명보트](#구명보트)                       |
-| [두 개 뽑아서 더하기](#두-개-뽑아서-더하기) |
-| [스킬트리](#스킬트리)                       |
-| [소수 만들기](#소수-만들기)                 |
-| [다음 큰 숫자](#다음-큰-숫자)               |
-| [단어 변환](#단어-변환)⭐                    |
+| 문제 이름                                   | 문제 링크                                                    |
+| ------------------------------------------- | ------------------------------------------------------------ |
+| [튜플](#튜플)                               | [튜플](https://programmers.co.kr/learn/courses/30/lessons/64065) |
+| [n진수 게임](#n진수-게임)                   | [n진수 게임](https://programmers.co.kr/learn/courses/30/lessons/17687) |
+| [압축](#압축)                               | [압축](https://programmers.co.kr/learn/courses/30/lessons/17684) |
+| [파일명 정렬](#파일명-정렬)                 | [파일명 정렬](https://programmers.co.kr/learn/courses/30/lessons/17686) |
+| [기능개발](#기능개발)                       | [기능개발](https://programmers.co.kr/learn/courses/30/lessons/42586) |
+| [다리를 지나는 트럭](#다리를-지나는-트럭)   | [다리를 지나는 트럭](https://programmers.co.kr/learn/courses/30/lessons/42583) |
+| [프린터](#프린터)                           | [프린터](https://programmers.co.kr/learn/courses/30/lessons/42587) |
+| [체육복](#체육복)                           | [체육복](https://programmers.co.kr/learn/courses/30/lessons/42862) |
+| [베스트앨범](#베스트앨범)                   | [베스트앨범](https://programmers.co.kr/learn/courses/30/lessons/42579?language=java) |
+| [네트워크](#네트워크)                       | [네트워크](https://programmers.co.kr/learn/courses/30/lessons/43162) |
+| [구명보트](#구명보트)                       | [구명보트](https://programmers.co.kr/learn/courses/30/lessons/42885) |
+| [두 개 뽑아서 더하기](#두-개-뽑아서-더하기) | [두 개 뽑아서 더하기](https://programmers.co.kr/learn/courses/30/lessons/68644) |
+| [스킬트리](#스킬트리)                       | [스킬트리](https://programmers.co.kr/learn/courses/30/lessons/49993) |
+| [소수 만들기](#소수-만들기)                 | [소수 만들기](https://programmers.co.kr/learn/courses/30/lessons/12977) |
+| [다음 큰 숫자](#다음-큰-숫자)               | [다음 큰 숫자](https://programmers.co.kr/learn/courses/30/lessons/12911) |
+| [단어 변환](#단어-변환)⭐                    | [단어 변환](https://programmers.co.kr/learn/courses/30/lessons/43163) |
 
 <br>
 
