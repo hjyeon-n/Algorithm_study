@@ -38,6 +38,7 @@ public class Solution_5427 {
 					
 //					시작점일 때
 					if (map[j][k] == '@') {
+						visited[j][k] = 1;
 						queue.add(new Location(j, k));
 					}
 					
@@ -56,7 +57,7 @@ public class Solution_5427 {
 				System.out.println("IMPOSSIBLE");
 			}
 			else {
-				System.out.println(min + 1);
+				System.out.println(min);
 			}
 		}
 	}
