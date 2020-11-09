@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main {
+public class Solution_17406 {
 	static int[][] A, copyA;
 	static Location start, end;
 	static int min, N, M;
