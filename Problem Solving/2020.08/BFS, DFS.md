@@ -210,6 +210,10 @@ BFS를 실행하기 전, 현재층과 목표층을 비교한 뒤 같으면 0을 
 
 <br>
 
+➕ 이 문제랑 비슷한 문제는 [여기](https://github.com/hjyeon-n/Algorithm_study/blob/master/Problem%20Solving/2020.11/BFS%2C%20DFS.md#%EB%B6%88)서 확인! 😎
+
+<br>
+
 <hr>
 
 #### #카카오 프렌즈 컬러링북
