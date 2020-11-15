@@ -3,10 +3,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Solution_10451 {
+public class 10451_ver2 {
 	static int[] arr;
 	static boolean[] visited;
-	static int cnt, target;
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		// TODO Auto-generated method stub
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -21,11 +20,13 @@ public class Solution_10451 {
 				arr[j] = Integer.parseInt(st.nextToken());
 			}
 			
-			cnt = 0;
+			int cnt = 0;
 			visited = new boolean[n + 1];
 			for (int j = 1; j <= n; j++) {
-				target = j;
-				dfs(j);
+				if (!visited[j]) {
+					dfs(j);
+					cnt++;
+				}
 			}
 			
 			System.out.println(cnt);
@@ -35,10 +36,6 @@ public class Solution_10451 {
 	public static void dfs(int node) {
 		if (visited[node]) {
 			return;
-		}
-		
-		if (arr[node] == target) {
-			cnt++;
 		}
 		visited[node] = true;
 		dfs(arr[node]);
