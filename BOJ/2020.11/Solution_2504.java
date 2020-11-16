@@ -38,7 +38,7 @@ public class Solution_2504 {
 						stack.push("2");
 					} 
 					else {
-						check = stackInnerLoop(stack, alpha);
+						check = chkStack(stack, alpha);
 					}
 				} 
 				else {
@@ -47,7 +47,7 @@ public class Solution_2504 {
 						stack.push("3");
 					} 
 					else {
-						check = stackInnerLoop(stack, alpha);
+						check = chkStack(stack, alpha);
 					}
 				}
 			}
@@ -66,7 +66,7 @@ public class Solution_2504 {
 		System.out.println(sum);
 	}
 
-	public static boolean stackInnerLoop(Stack<String> stack, String alpha) {
+	public static boolean chkStack(Stack<String> stack, String alpha) {
 		int result = 0;
 		String good = "";
 		String bad = "";
