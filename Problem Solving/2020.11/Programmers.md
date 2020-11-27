@@ -6,7 +6,8 @@
 | [여행경로](#여행경로)⭐                            | [여행경로](https://programmers.co.kr/learn/courses/30/lessons/43164?language=java) |
 | [가장 긴 팰린드롬](#가장-긴-팰린드롬)             | [가장 긴 팰린드롬](https://programmers.co.kr/learn/courses/30/lessons/12904) |
 | [등굣길](#등굣길)                                 | [등굣길](https://programmers.co.kr/learn/courses/30/lessons/42898) |
-| [문자열 내 p와 y의 개수](#문자열 내 p와 y의 개수) | [문자열 내 p와 y의 개수](https://programmers.co.kr/learn/courses/30/lessons/12916) |
+| [문자열 내 p와 y의 개수](#문자열-내-p와-y의-개수) | [문자열 내 p와 y의 개수](https://programmers.co.kr/learn/courses/30/lessons/12916) |
+| [점프와 순간 이동](#점프와-순간-이동)             | [점프와 순간 이동](https://programmers.co.kr/learn/courses/30/lessons/12980?language=java) |
 
 <br>
 
@@ -148,3 +149,13 @@ DP 문제고, 무슨 문제인지는 기억이 잘 안 나지만 비슷한 문�
 조금 부끄럽지만... 레벨1의 문제다. 알바 다닌다는 핑계로 요즘 너무 공부를 안 한다...😢 더 힘내자.
 
 이 문제는 1학년도 풀 만한 문제이지만 ver2의 다른 사람 풀이가 좋아서 올려두었다. 각각의 변수가 필요한지, 아니면 하나의 변수로 해결이 가능한지 좀 더 생각해 볼 만한 문제였다. 쉬운 난이도일 수록 사람들마다 방식이 달라서 새로 배우는 재미가 쏠쏠하다. 풀이는 생략!
+
+<br>
+
+<hr>
+
+#### #점프와 순간 이동
+
+[점프와 순간 이동 소스 코드](https://github.com/hjyeon-n/Algorithm_study/blob/master/Programmers/2020.11/%EC%A0%90%ED%94%84%EC%99%80%20%EC%88%9C%EA%B0%84%20%EC%9D%B4%EB%8F%99.java)
+
+1칸을 이동하거나 0칸을 이동할 수 있다는 건 이진법을 의미하기 때문에 주어지는 수를 이진수로 변환한 뒤, 1의 개수를 세면 된다.
