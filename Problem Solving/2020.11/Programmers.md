@@ -1,11 +1,12 @@
 # Programmers
 
-| 문제 이름                             | 문제 링크                                                    |
-| ------------------------------------- | ------------------------------------------------------------ |
-| [멀리 뛰기](#멀리-뛰기)               | [멀리 뛰기](https://programmers.co.kr/learn/courses/30/lessons/12914) |
-| [여행경로](#여행경로)⭐                | [여행경로](https://programmers.co.kr/learn/courses/30/lessons/43164?language=java) |
-| [가장 긴 팰린드롬](#가장-긴-팰린드롬) | [가장 긴 팰린드롬](https://programmers.co.kr/learn/courses/30/lessons/12904) |
-| [등굣길](#등굣길)                     | [등굣길](https://programmers.co.kr/learn/courses/30/lessons/42898) |
+| 문제 이름                                         | 문제 링크                                                    |
+| ------------------------------------------------- | ------------------------------------------------------------ |
+| [멀리 뛰기](#멀리-뛰기)                           | [멀리 뛰기](https://programmers.co.kr/learn/courses/30/lessons/12914) |
+| [여행경로](#여행경로)⭐                            | [여행경로](https://programmers.co.kr/learn/courses/30/lessons/43164?language=java) |
+| [가장 긴 팰린드롬](#가장-긴-팰린드롬)             | [가장 긴 팰린드롬](https://programmers.co.kr/learn/courses/30/lessons/12904) |
+| [등굣길](#등굣길)                                 | [등굣길](https://programmers.co.kr/learn/courses/30/lessons/42898) |
+| [문자열 내 p와 y의 개수](#문자열 내 p와 y의 개수) | [문자열 내 p와 y의 개수](https://programmers.co.kr/learn/courses/30/lessons/12916) |
 
 <br>
 
@@ -136,3 +137,14 @@ DP 문제고, 무슨 문제인지는 기억이 잘 안 나지만 비슷한 문�
 6. 다시 binarySearch로 들어와서 true이면 친구들의 수를 더 늘려도 되기 때문에 l을 mid + 1로 옮겨준다.
 7. false라면 친구들의 수를 줄여야 하기 때문에 r을 mid로 바꾼다.
 
+<br>
+
+<hr>
+
+#### #문자열 내 p와 y의 개수
+
+[문자열 내 p와 y의 개수 소스 코드](https://github.com/hjyeon-n/Algorithm_study/tree/master/Programmers/2020.11/%EB%AC%B8%EC%9E%90%EC%97%B4%20%EB%82%B4%20p%EC%99%80%20y%EC%9D%98%20%EA%B0%9C%EC%88%98)
+
+조금 부끄럽지만... 레벨1의 문제다. 알바 다닌다는 핑계로 요즘 너무 공부를 안 한다...😢 더 힘내자.
+
+이 문제는 1학년도 풀 만한 문제이지만 ver2의 다른 사람 풀이가 좋아서 올려두었다. 각각의 변수가 필요한지, 아니면 하나의 변수로 해결이 가능한지 좀 더 생각해 볼 만한 문제였다. 쉬운 난이도일 수록 사람들마다 방식이 달라서 새로 배우는 재미가 쏠쏠하다. 풀이는 생략!
