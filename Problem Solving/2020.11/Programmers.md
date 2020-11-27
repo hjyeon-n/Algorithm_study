@@ -8,6 +8,7 @@
 | [등굣길](#등굣길)                                 | [등굣길](https://programmers.co.kr/learn/courses/30/lessons/42898) |
 | [문자열 내 p와 y의 개수](#문자열-내-p와-y의-개수) | [문자열 내 p와 y의 개수](https://programmers.co.kr/learn/courses/30/lessons/12916) |
 | [점프와 순간 이동](#점프와-순간-이동)             | [점프와 순간 이동](https://programmers.co.kr/learn/courses/30/lessons/12980?language=java) |
+| [짝지어 제거하기](#짝지어-제거하기)               | [짝지어 제거하기](https://programmers.co.kr/learn/courses/30/lessons/12973) |
 
 <br>
 
@@ -159,3 +160,25 @@ DP 문제고, 무슨 문제인지는 기억이 잘 안 나지만 비슷한 문�
 [점프와 순간 이동 소스 코드](https://github.com/hjyeon-n/Algorithm_study/blob/master/Programmers/2020.11/%EC%A0%90%ED%94%84%EC%99%80%20%EC%88%9C%EA%B0%84%20%EC%9D%B4%EB%8F%99.java)
 
 1칸을 이동하거나 0칸을 이동할 수 있다는 건 이진법을 의미하기 때문에 주어지는 수를 이진수로 변환한 뒤, 1의 개수를 세면 된다.
+
+<br>
+
+<hr>
+
+#### #짝지어 제거하기
+
+[짝지어 제거하기 소스 코드](https://github.com/hjyeon-n/Algorithm_study/tree/master/Programmers/2020.11)
+
+처음에는 단순무식하게 prev, current 변수를 두어 현재 문자와 이전의 문자를 비교해서 같으면 제거하는 식으로 진행하려고 했다.
+
+하지만, 문자열에서는 substring을 사용해야 했고 그 경우에도 prev가 0일 때와 그렇지 않을 때의 조건을 나눠야 했다. 리스트 자료구조를 사용했더라도 인덱스 접근으로 삭제하는 방식은 두 개를 연속으로 삭제했을 때 다른 문자가 삭제될 위험까지 있었으므로 다른 방법을 생각해야 했다.
+
+그래서 힌트를 얻고, 스택으로 풀게 되었다. 비슷한 문제를 풀었던 것 같았는데 무슨 문제였는지 기억이 잘 안 난다. 😂
+
+<br>
+
+1. 우선, 문자열 첫 글자를 스택에 push한다.
+2. peek을 사용해서 stack의 top 값과 문자를 비교해서 같다면 pop해 준다. 이때 stack이 비어있을 수 있으므로 비어있는지 꼭 확인해야 한다.
+3. 만약 같지 않다면, stack에 값을 push 한다.
+4. 반복문을 다 돌고나서 stack에 값이 없다면 모든 문자를 제거한 것이므로 1을 반환하고 그렇지 않다면 남아있는 문자가 있다는 의미이므로 0을 반환한다.
+
