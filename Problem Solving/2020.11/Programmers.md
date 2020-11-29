@@ -9,6 +9,7 @@
 | [문자열 내 p와 y의 개수](#문자열-내-p와-y의-개수) | [문자열 내 p와 y의 개수](https://programmers.co.kr/learn/courses/30/lessons/12916) |
 | [점프와 순간 이동](#점프와-순간-이동)             | [점프와 순간 이동](https://programmers.co.kr/learn/courses/30/lessons/12980?language=java) |
 | [짝지어 제거하기](#짝지어-제거하기)               | [짝지어 제거하기](https://programmers.co.kr/learn/courses/30/lessons/12973) |
+| [하샤드 수](#하샤드-수)                           | [하샤드 수](https://programmers.co.kr/learn/courses/30/lessons/12947) |
 
 <br>
 
@@ -181,4 +182,16 @@ DP 문제고, 무슨 문제인지는 기억이 잘 안 나지만 비슷한 문�
 2. peek을 사용해서 stack의 top 값과 문자를 비교해서 같다면 pop해 준다. 이때 stack이 비어있을 수 있으므로 비어있는지 꼭 확인해야 한다.
 3. 만약 같지 않다면, stack에 값을 push 한다.
 4. 반복문을 다 돌고나서 stack에 값이 없다면 모든 문자를 제거한 것이므로 1을 반환하고 그렇지 않다면 남아있는 문자가 있다는 의미이므로 0을 반환한다.
+
+<br>
+
+<hr>
+
+#### #하샤드 수
+
+[하샤드 수 소스 코드](https://github.com/hjyeon-n/Algorithm_study/blob/master/Programmers/2020.11/%ED%95%98%EC%83%A4%EB%93%9C%20%EC%88%98.java)
+
+사실 풀이 생략하려고 했는데... 그냥 쓴다. 자릿수 연산을 하는 건 while문을 돌리면 되는 건 알았는데 가끔 조건을 헷갈릴 때가 있다. 매번 반복 때마다 수를 10으로 나누기 때문에 이 수가 0보다 커야 한다는 걸 잊지 말기!
+
+
 
