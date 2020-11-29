@@ -10,6 +10,7 @@
 | [점프와 순간 이동](#점프와-순간-이동)             | [점프와 순간 이동](https://programmers.co.kr/learn/courses/30/lessons/12980?language=java) |
 | [짝지어 제거하기](#짝지어-제거하기)               | [짝지어 제거하기](https://programmers.co.kr/learn/courses/30/lessons/12973) |
 | [하샤드 수](#하샤드-수)                           | [하샤드 수](https://programmers.co.kr/learn/courses/30/lessons/12947) |
+| [문자열 다루기 기본](#문자열-다루기-기본)         | [문자열 다루기 기본](https://programmers.co.kr/learn/courses/30/lessons/12918) |
 
 <br>
 
@@ -193,5 +194,12 @@ DP 문제고, 무슨 문제인지는 기억이 잘 안 나지만 비슷한 문�
 
 사실 풀이 생략하려고 했는데... 그냥 쓴다. 자릿수 연산을 하는 건 while문을 돌리면 되는 건 알았는데 가끔 조건을 헷갈릴 때가 있다. 매번 반복 때마다 수를 10으로 나누기 때문에 이 수가 0보다 커야 한다는 걸 잊지 말기!
 
+<br>
 
+<hr>
 
+#### #문자열 다루기 기본
+
+[문자열 다루기 기본 소스 코드](https://github.com/hjyeon-n/Algorithm_study/tree/master/Programmers/2020.11/%EB%AC%B8%EC%9E%90%EC%97%B4%20%EB%8B%A4%EB%A3%A8%EA%B8%B0%20%EA%B8%B0%EB%B3%B8)
+
+문제 이름에서 알 수 있듯이 정말 기본 문제이다. 하지만 isDigit 같은 Character형 내장 함수를 써 보는 것도 좋은 기회였고, 무엇보다 ver2 같은 try-catch문을 활용해서 exception 발생 시에 false 값을 반환하는 문제는 흔히 볼 수 없는 거라서 따로 정리해 둔다.✍
