@@ -11,6 +11,7 @@
 | [짝지어 제거하기](#짝지어-제거하기)               | [짝지어 제거하기](https://programmers.co.kr/learn/courses/30/lessons/12973) |
 | [하샤드 수](#하샤드-수)                           | [하샤드 수](https://programmers.co.kr/learn/courses/30/lessons/12947) |
 | [문자열 다루기 기본](#문자열-다루기-기본)         | [문자열 다루기 기본](https://programmers.co.kr/learn/courses/30/lessons/12918) |
+| [최댓값과 최솟값](#최댓값과-최솟값)               | [최댓값과 최솟값](https://programmers.co.kr/learn/courses/30/lessons/12939) |
 
 <br>
 
@@ -203,3 +204,15 @@ DP 문제고, 무슨 문제인지는 기억이 잘 안 나지만 비슷한 문�
 [문자열 다루기 기본 소스 코드](https://github.com/hjyeon-n/Algorithm_study/tree/master/Programmers/2020.11/%EB%AC%B8%EC%9E%90%EC%97%B4%20%EB%8B%A4%EB%A3%A8%EA%B8%B0%20%EA%B8%B0%EB%B3%B8)
 
 문제 이름에서 알 수 있듯이 정말 기본 문제이다. 하지만 isDigit 같은 Character형 내장 함수를 써 보는 것도 좋은 기회였고, 무엇보다 ver2 같은 try-catch문을 활용해서 exception 발생 시에 false 값을 반환하는 문제는 흔히 볼 수 없는 거라서 따로 정리해 둔다.✍
+
+<br>
+
+<hr>
+
+#### #최댓값과 최솟값
+
+[최댓값과 최솟값 소스 코드](https://github.com/hjyeon-n/Algorithm_study/tree/master/Programmers/2020.11)
+
+이게 왜 레벨2 문제지 싶은... 아주 쉬운 문제다. String 값으로 주어져있기 때문에 split을 사용해서 String 배열을 만들어준 뒤 int 배열로 변환해서 풀었다. 사실 String 배열에서 int 배열로 변환하는 다른 새로운 풀이를 원해서 풀었지만 대부분의 사람이 나와 똑같이 풀었다...
+
+그래서 람다식을 검색해서 새로 풀었다. 아직 람다를 쓰는 데 너무 낯설지만 이렇게 쉬운 문제에 적용하는 연습이 필요할 것 같다!
