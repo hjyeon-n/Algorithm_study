@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main {
+public class Solution_1058 {
 	static int N, cnt;
 	static int[][] map;
 	static boolean[] visited;
