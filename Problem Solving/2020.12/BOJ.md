@@ -6,6 +6,7 @@
 | 1058      | [친구](#친구)                |
 | 2668      | [숫자 고르기](#숫자-고르기)⭐ |
 | 2615      | [오목](#오목)                |
+| 1181      | [단어 정렬](#단어-정렬)      |
 
 <br>
 
@@ -89,3 +90,13 @@
 가장 왼쪽 방향을 구하는 것도 `setNode`라는 별도의 함수를 구현해서 방향에 따라 가장 왼쪽 좌표를 구했다.
 
 이 문제는 보기만 하면 대충 어떤 의미인지 알기 때문에 별도의 풀이는 생략한다! 
+
+<br>
+
+<hr>
+
+#### #단어 정렬
+
+[단어 정렬 소스 코드](https://github.com/hjyeon-n/Algorithm_study/blob/master/BOJ/2020.12/Solution_1181.java)
+
+최근에 풀었던 프로그래머스의 [문자열 내 마음대로 정렬하기](https://github.com/hjyeon-n/Algorithm_study/blob/master/Problem%20Solving/2020.12/Programmers.md#%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%82%B4-%EB%A7%88%EC%9D%8C%EB%8C%80%EB%A1%9C-%EC%A0%95%EB%A0%AC%ED%95%98%EA%B8%B0)와 비슷한 문제였다. 단, 이 문제는 문자열 길이를 중심으로 하기 때문에 더 쉬운 문제였다. 그때와 동일하게 사전 순으로 미리 정렬해 주고, compartor를 사용해서 길이를 비교한 뒤 다시 한 번 정렬해 주었다.
