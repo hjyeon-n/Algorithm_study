@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Solution_2184 {
+public class Solution_3184 {
 	static char[][] map;
 	static boolean[][] visited;
 	static int R, C;
