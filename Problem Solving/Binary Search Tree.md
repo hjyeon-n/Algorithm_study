@@ -24,6 +24,7 @@ public class Tree {
 
         tree.deleteNode(31);
         tree.deleteNode(8);
+        tree.deleteNode(19);
         
         System.out.println("");
         System.out.println("삭제 결과");
