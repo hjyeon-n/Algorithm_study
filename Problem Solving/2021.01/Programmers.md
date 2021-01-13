@@ -2,7 +2,7 @@
 
 | 문제 이름                                                    | 문제 링크                                                    |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [JadenCase 문자열 만들기](#JadenCase-문자열 만들기)          | [JadenCase 문자열 만들기](https://programmers.co.kr/learn/courses/30/lessons/12951?language=java) |
+| [JadenCase 문자열 만들기](#JadenCase-문자열-만들기)          | [JadenCase 문자열 만들기](https://programmers.co.kr/learn/courses/30/lessons/12951?language=java) |
 | [수식 최대화](https://programmers.co.kr/learn/courses/30/lessons/67257) | [수식 최대화](수식-최대화)                                   |
 
 <br>
