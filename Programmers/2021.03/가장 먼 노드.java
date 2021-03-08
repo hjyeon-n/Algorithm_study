@@ -40,7 +40,7 @@ class Solution {
             int val = node.val;
             int cnt = node.cnt;
             
-            for (int i = 1; i <= n; i++) {
+            for (int i = 2; i <= n; i++) {
                 if (graph[val][i] && dist[i] == 0) {
                     dist[i] = cnt + 1;
                     queue.add(new Node(i, dist[i]));
