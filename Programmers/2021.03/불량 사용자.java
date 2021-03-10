@@ -4,7 +4,7 @@ class Programmers {
 	
 	public static void main(String[] args) {
         String[] user_id = {"frodo", "fradi", "crodo", "abc123", "frodoc"};
-        String[] banned_id = {"fr*d*", "abc1**"};
+        String[] banned_id = {"*rodo", "*rodo", "******"};
         System.out.println(solution(user_id, banned_id));
     }
 
@@ -27,12 +27,13 @@ class Programmers {
 			ban_user_idx.add(user_idxs.toString()); 
 			return ;
 		}
+		
 		for (int i = 0; i < user_id.length; i++) {
 			if (visited[i])  {
 				continue;
 			}
 
-			boolean flag = false;
+			boolean flag = true;
 
 			if (user_id[i].length() == banned_id[ban_idx].length()) {
 				for (int s = 0; s < user_id[i].length(); s++) {
@@ -41,14 +42,14 @@ class Programmers {
 					} 
 
 					if (user_id[i].charAt(s) != banned_id[ban_idx].charAt(s)) {
-						flag = true;
+						flag = false;
 						break;
 					}
 				}
 
-				if (!flag) { 
+				if (flag) { 
 					visited[i] = true;
-					dfs(user_id, banned_id, ban_idx+1, visited); 
+					dfs(user_id, banned_id, ban_idx + 1, visited); 
 					visited[i] = false;
 				}
 			}
