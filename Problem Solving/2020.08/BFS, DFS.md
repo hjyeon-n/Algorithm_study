@@ -300,6 +300,10 @@ BFS를 실행하기 전, 현재층과 목표층을 비교한 뒤 같으면 0을 
 
 2번의 경우, queue.add(new Location(nx, ny, 1, depth + 1)); 라고 하는 대신에 crush = 1; queue.add(new Location(nx, ny,  crush, depth + 1));로 하면 자꾸 "틀렸습니다" 가 떴다... 이것도 다시 생각해서 정리해야겠다. 😥
 
+(2021.03.13 업데이트)
+
+왜 이런 일이 발생했는지 알았다! [여기](https://github.com/hjyeon-n/Algorithm_study/blob/master/Problem%20Solving/2021.03/BFS%2C%20DFS.md#%EC%88%AB%EC%9E%90%ED%8C%90-%EC%A0%90%ED%94%84)에서 참고할 것!
+
 
 
 
