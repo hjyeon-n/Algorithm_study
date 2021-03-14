@@ -57,9 +57,7 @@ public class Solution_13023 {
 		visited[node] = true;
 		for (int i = 0; i < graph.get(node).size(); i++) {
 			if (!visited[graph.get(node).get(i)]) {
-				visited[graph.get(node).get(i)] = true;
 				dfs(graph.get(node).get(i), depth + 1, N);
-				visited[graph.get(node).get(i)] = false;
 			}
 		}
 		visited[node] = false;
