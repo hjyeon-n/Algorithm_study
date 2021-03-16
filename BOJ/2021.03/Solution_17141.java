@@ -43,7 +43,7 @@ public class Solution_17141 {
 		int size = locList.size();
 		back = new boolean[size];
 		place = new int[size];
-		
+
 		comb(locList.size(), M, 0, 0);
 		min = Integer.MAX_VALUE;
 
@@ -80,9 +80,9 @@ public class Solution_17141 {
 				int ny = y + dy[i];
 
 				if (nx >= 0 && nx < N && ny >= 0 && ny < N) {
-					if (!visited[nx][ny] && map[nx][ny] == 0) {
+					if (!visited[nx][ny] && map[nx][ny] != 1) {
 						visited[nx][ny] = true;
-						map[nx][ny] = 2;
+						map[nx][ny] = -1;
 						queue.add(new Node(nx, ny, t + 1));
 					}
 				}
@@ -108,6 +108,7 @@ public class Solution_17141 {
 		for (int i = 0; i < idx.length; i++) {
 			int[] arr = locList.get(idx[i]);
 			map[arr[0]][arr[1]] = -1;
+			visited[arr[0]][arr[1]] = true;
 			queue.add(new Node(arr[0], arr[1], 0));
 		}
 		return map;
@@ -138,12 +139,7 @@ public class Solution_17141 {
 
 		for (int i = 0; i < N; i++) {
 			for (int j = 0; j < N; j++) {
-				if (map[i][j] == 2) {
-					tmp[i][j] = 0;
-				}
-				else {
-					tmp[i][j] = map[i][j];
-				}
+				tmp[i][j] = map[i][j];
 			}
 		}
 		return tmp;
