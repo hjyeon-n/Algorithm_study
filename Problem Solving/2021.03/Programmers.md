@@ -1,10 +1,11 @@
 # Programmers
 
-| 문제 번호                                                    | 문제 이름                             |
-| ------------------------------------------------------------ | ------------------------------------- |
-| [가장 먼 노드](https://programmers.co.kr/learn/courses/30/lessons/49189) | [가장 먼 노드](#가장-먼-노드)         |
-| [불량 사용자](https://programmers.co.kr/learn/courses/30/lessons/64064) | [불량 사용자](#불량-사용자)⭐          |
-| [게임 맵 최단거리](https://programmers.co.kr/learn/courses/30/lessons/1844) | [게임 맵 최단거리](#게임-맵-최단거리) |
+| 문제 번호                                                    | 문제 이름                                                    |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [가장 먼 노드](https://programmers.co.kr/learn/courses/30/lessons/49189) | [가장 먼 노드](#가장-먼-노드)                                |
+| [불량 사용자](https://programmers.co.kr/learn/courses/30/lessons/64064) | [불량 사용자](#불량-사용자)⭐                                 |
+| [게임 맵 최단거리](https://programmers.co.kr/learn/courses/30/lessons/1844) | [게임 맵 최단거리](#게임-맵-최단거리)                        |
+| [x만큼 간격이 있는 n개의 숫자](https://programmers.co.kr/learn/courses/30/lessons/12954) | [x만큼 간격이 있는 n개의 숫자](#x만큼-간격이-있는-n개의-숫자) |
 
 <br>
 
@@ -65,3 +66,18 @@
 
 너무 기본 그 자체라 비슷한 문제인 [미로 탐색](https://github.com/hjyeon-n/Algorithm_study/blob/master/Problem%20Solving/2020.07/BFS%2C%20DFS.md#%EB%AF%B8%EB%A1%9C-%ED%83%90%EC%83%89)의 풀이로 대체한다. 미로 탐색 문제의 경우엔 항상 도착할 수 있는 경우만 입력으로 주어지지만 이 문제는 -1로 반환한다는 점을 제외해서 사실상 동일하다. -1로 반환하는 것도 방문 여부를 확인해서 방문하지 않았다면 도달하지 않았다는 뜻이기 때문에 -1을 반환하면 된다.
 
+<br>
+
+<hr>
+
+#### #x만큼 간격이 있는 n개의 숫자
+
+[x만큼 간격이 있는 n개의 숫자 소스 코드](https://github.com/hjyeon-n/Algorithm_study/blob/master/Programmers/2021.03/x%EB%A7%8C%ED%81%BC%20%EA%B0%84%EA%B2%A9%EC%9D%B4%20%EC%9E%88%EB%8A%94%20n%EA%B0%9C%EC%9D%98%20%EC%88%AB%EC%9E%90.java)
+
+풀이하기엔 약간 양심 없는 문제이긴 한데... 처음엔 틀렸어서 풀이해 본다.
+
+물론, 풀이 방법에는 문제가 없었다. 당연히 배수로 풀었는데 변수의 타입형이 문제였다.
+
+문제에서 주어진 것처럼 x는 -10000000 이상, 10000000 이하인 정수이다. 즉, 연산 결과가 int의 범위를 넘어설 수 있다. 하지만 int와 int를 연산해서는 int만 반환되기 때문에 테스트케이스에서 틀린 것이다.
+
+따라서, 매개변수로 주어진 int형 x를 long형 nx로 바꿔서 풀어야 문제를 해결할 수 있다.
