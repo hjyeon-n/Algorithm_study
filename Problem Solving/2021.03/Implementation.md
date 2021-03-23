@@ -6,6 +6,7 @@
 | [15683](https://www.acmicpc.net/problem/15683) | [감시](#감시)⭐              |
 | [17135](https://www.acmicpc.net/problem/17135) | [캐슬 디펜스](#캐슬-디펜스) |
 | [1107](https://www.acmicpc.net/problem/1107)   | [리모컨](#리모컨)           |
+| [12904](https://www.acmicpc.net/problem/12904) | [A와 B](#A와-B)             |
 
 <br>
 
@@ -194,3 +195,17 @@ traversal(tmp, x, y, 3);
 6. check 함수를 호출해 고장난 버튼이 포함됐는지 확인한다. 이때 리스트의 contains 함수를 활용한다.
 7. check가 true라면 현재 i와 N 값의 차이에 i의 길이(즉, 버튼을 누른 횟수)를 더해 min 값과 비교한다.
 8. min을 출력한다.
+
+<br>
+
+<hr>
+
+#### #A와 B
+
+[A와 B 소스 코드](https://github.com/hjyeon-n/Algorithm_study/tree/master/BOJ/2021.03)
+
+보자마자 BFS로 풀어야겠구만! 해서 호기롭게 풀었다가 틀렸다. 난 두 번째 연산 방법에서 문자열을 StringBuffer를 통해서 뒤집었는데 메모리 초과가 나길래 거기서 문제가 되는 줄 알고 직접 문자열을 뒤집는 연산을 구현했는데도 시간초과가 났다.
+
+뭐지 싶었는데 S가 T로 가는 방향이 아니라 T가 S로 가는 방향이라고 접근해야 문제를 풀 수 있다는 힌트를 보고 문제를 풀었다.
+
+BFS일 필요도 없기 때문에 while문으로 간단하게 풀었다. 체감 난이도는 실버1에서 2정도...?
