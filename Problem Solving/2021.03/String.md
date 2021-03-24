@@ -4,6 +4,8 @@
 | -------------------------------------------- | ------------------------------------- |
 | [3613](https://www.acmicpc.net/problem/3613) | [Java vs C++](#Java-vs-C++)           |
 | [7785](https://www.acmicpc.net/problem/7785) | [회사에 있는 사람](#회사에-있는-사람) |
+| [9012](https://www.acmicpc.net/problem/9012) | [괄호](#괄호)                         |
+| [4949](https://www.acmicpc.net/problem/4949) | [균형잡힌 세상](#균형잡힌-세상)       |
 
 <br>
 
@@ -48,3 +50,27 @@ JAVA일 때는
 ArrayList는 해당 값을 찾기 위해 완전 탐색을 하기 때문에 바로 접근할 수 있는 HashSet이나 HashMap을 사용해야 한다.
 
 두 번째로 풀었을 땐 HashMap으로 풀고 key 값을 HashSet에 저장하고 Iterator를 사용해서 다시 ArrayList에 넣는 작업을 거쳤는데 그냥 처음부터 HashSet으로 풀고 ArrayList에 넣으면 된다. 정답 코드도 그렇게 제출했다.
+
+<br>
+
+<hr>
+
+#### #괄호
+
+[괄호 소스 코드](https://github.com/hjyeon-n/Algorithm_study/blob/master/BOJ/2020.07/Solution_9012.java)
+
+사실 문자열 문제도 아니고 예전에 푼 문제지만 별도의 풀이가 없어서 짧막하게 풀이한다!
+
+스택 문제이고 닫는 괄호일 때 stack의 top 값에 해당하는 괄호의 열린 괄호인지 확인하고 괄호가 올바른지 그렇지 않은지 판별하는 문제이다.
+
+stack에 값이 남아있다면 대응되는 괄호가 없다는 뜻이기 때문에 불완전하고 마찬가지로 stack에 닫힌 괄호부터 들어가면 불완전하다.
+
+<br>
+
+<hr>
+
+#### #균형잡힌 세상
+
+[균형잡힌 세상 소스 코드](https://github.com/hjyeon-n/Algorithm_study/blob/master/BOJ/2021.03/Solution_4949.java)
+
+문자열 문제인 줄 알고 풀었는데 사실 괄호랑 똑같은 문제다...!
