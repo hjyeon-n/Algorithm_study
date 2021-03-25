@@ -10,8 +10,9 @@
 <br>
 
 <hr>
-
 #### #수들의 합 2
+
+[수들의 합 2 소스 코드](https://github.com/hjyeon-n/Algorithm_study/blob/master/BOJ/2021.02/Solution_2003.java)
 
 프로그래머스의 [보석 쇼핑](https://github.com/hjyeon-n/Algorithm_study/blob/master/Problem%20Solving/2021.02/Programmers.md#%EB%B3%B4%EC%84%9D-%EC%87%BC%ED%95%91)을 풀기 위해서 비슷하지만 더 쉬운 문제인 이 문제를 풀었다.
 
@@ -28,8 +29,9 @@
 <br>
 
 <hr>
-
 #### #두 용액
+
+[두 용액 소스 코드](https://github.com/hjyeon-n/Algorithm_study/blob/master/BOJ/2021.02/Solution_2470.java)
 
 투 포인터 문제 유형이지만 이분탐색으로 풀었다.
 
