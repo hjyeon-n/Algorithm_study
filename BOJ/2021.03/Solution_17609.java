@@ -64,11 +64,8 @@ public class Solution_17609 {
     				if(cnt == 1) {
     					return 1;
     				}
-    				else if (cnt == 2) {
-    					return 2;
-    				}
     				else {
-    					return 0;
+    					return 2;
     				}
     			}
     		}
