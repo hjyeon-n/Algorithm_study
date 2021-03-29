@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
-public class Main {
+public class Solution_2075 {
 	public static void main(String args[]) throws NumberFormatException, IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
