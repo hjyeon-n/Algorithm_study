@@ -26,8 +26,8 @@ public class Solution_14891 {
 			int num = Integer.parseInt(st.nextToken()) - 1;
 			int dir = Integer.parseInt(st.nextToken());
 
-			int before = (num - 1) >= 0 ? num - 1 : -1;
-			int after = (num + 1) < 4 ? num + 1 : 4;
+			int before = num - 1;
+			int after = num + 1;
 
 			int val1 = gear[num][6];
 			int val2 = gear[num][2];
