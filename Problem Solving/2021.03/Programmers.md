@@ -1,4 +1,4 @@
-# []Programmers
+# Programmers
 
 | 문제 번호                                                    | 문제 이름                                                    |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -7,6 +7,7 @@
 | [게임 맵 최단거리](https://programmers.co.kr/learn/courses/30/lessons/1844) | [게임 맵 최단거리](#게임-맵-최단거리)                        |
 | [x만큼 간격이 있는 n개의 숫자](https://programmers.co.kr/learn/courses/30/lessons/12954) | [x만큼 간격이 있는 n개의 숫자](#x만큼-간격이-있는-n개의-숫자) |
 | [순위 검색](https://programmers.co.kr/learn/courses/30/lessons/72412) | [순위 검색](#순위-검색)                                      |
+| [정수 삼각형](https://programmers.co.kr/learn/courses/30/lessons/43105) | [정수 삼각형](#정수-삼각형)                                  |
 
 <br>
 
@@ -125,3 +126,15 @@ query를 순회하면서 해당 쿼리랑 일치하는 info문의 인덱스들�
 시간초과가 나기 전 이 풀이에서는 9번에 해당하는 코드가 없어서 자꾸 런타임 에러가 났다. 정말... 머리가 터질 뻔 했다.🤯
 
 어찌됐건 잘 풀었다는 게 다행이다! level2라고는 했지만 7점이 할당된 거 보니 사실상 level2도 아닌 것 같다... 😂
+
+<br>
+
+<hr>
+
+#### #정수 삼각형
+
+[정수 삼각형 소스 코드](https://github.com/hjyeon-n/Algorithm_study/blob/master/Programmers/2021.03/%EC%A0%95%EC%88%98%20%EC%82%BC%EA%B0%81%ED%98%95.java)
+
+2020년 7월에 풀었던 BOJ의 [정수 삼각형](https://github.com/hjyeon-n/Algorithm_study/blob/master/Problem%20Solving/2020.07/Dynamic%20Programming.md#%EC%A0%95%EC%88%98-%EC%82%BC%EA%B0%81%ED%98%95) 문제랑 똑같다. 이 문제를 처음 풀 때는 오래도 걸렸고, 정말 어떻게 풀어야 할지 몰라서 막막했다... 그리고 너무 인상 깊어서 다시 복습했었는데 역시 복습의 힘이라고 해야 하나 꽤 오래 지났는데도 비슷하게 풀 수 있었다...!
+
+같은 문제이므로 풀이는 생략!
