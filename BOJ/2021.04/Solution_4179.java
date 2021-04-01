@@ -41,7 +41,6 @@ public class Solution_4179 {
 				}
 				
 				if (map[i][j] == 'F') {
-					visited[i][j] = true;
 					fire.add(new Location(i, j));
 				}
 			}
