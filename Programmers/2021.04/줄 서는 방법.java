@@ -12,22 +12,24 @@ class Programmers {
 	public static int[] solution(int n, long k) {
         int[] answer = new int[n];
         ArrayList<Integer> list = new ArrayList<Integer>();
-        long factorial = 1;
+        long fac = 1;
+        int idx = 0;
+        
         for (int i = 1; i <= n; i++) {
             list.add(i);
-            factorial *= i;
+            fac *= i;
         }
+        
+        k--;
 
-        int i = 0;
-        long remain = k - 1;
-
-        while (i < n) {
-            factorial = factorial / (n - i);
-            long value = remain / factorial;
-            answer[i++] = list.get((int)value);
-            list.remove((int)value);
-            remain = remain % factorial;
+        while (n > 0) {
+            fac /= n--;
+            int val = (int)(k / fac);
+            answer[idx++] = list.get(val);
+            list.remove(val);
+            k %= fac;
         }
+        
         return answer;
     }
 }
