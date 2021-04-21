@@ -6,6 +6,7 @@ import java.util.StringTokenizer;
 
 public class Solution_16918 {
 	static int R, C, N;
+	static Queue<Location> queue;
 	static char[][] map;
 	static int[] dx = {-1, 0, 1, 0};
 	static int[] dy = {0, 1, 0, -1}; 
@@ -31,36 +32,22 @@ public class Solution_16918 {
 			return;
 		}
 		
+		queue = new LinkedList<Location>();
 		if (N % 2 == 0) {
-			for (int i = 0; i < R; i++) {
-				for (int j = 0; j < C; j++) {
-					map[i][j] = 'O';
-				}
-			}
+			init();
 			print();
 			return;
 		}
 		
-		int cnt = 2;
-		Queue<Location> queue = new LinkedList<Location>();
-		while (cnt <= N) {
-			if (cnt % 2 == 0) {
-				for (int i = 0; i < R; i++) {
-					for (int j = 0; j < C; j++) {
-						if (map[i][j] == 'O') {
-							queue.add(new Location(i, j));
-						}
-						map[i][j] = 'O';
-					}
-				}
+		int cnt = N / 2;
+		while (cnt > 0) {
+			init();
+			
+			while (!queue.isEmpty()) {
+				Location loc = queue.poll();
+				bomb(loc.x, loc.y);
 			}
-			else {
-				while (!queue.isEmpty()) {
-					Location loc = queue.poll();
-					bomb(loc.x, loc.y);
-				}
-			}
-			cnt++;
+			cnt--;
 		}
 		
 		print();
@@ -87,6 +74,17 @@ public class Solution_16918 {
 			sb.append("\n");
 		}
 		System.out.println(sb.toString());
+	}
+	
+	public static void init() {
+		for (int i = 0; i < R; i++) {
+			for (int j = 0; j < C; j++) {
+				if (map[i][j] == 'O') {
+					queue.add(new Location(i, j));
+				}
+				map[i][j] = 'O';
+			}
+		}
 	}
 }
 
