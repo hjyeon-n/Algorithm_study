@@ -5,6 +5,7 @@
 | [럭키 스트레이트](#럭키-스트레이트) | 2021.05.05 |
 | [문자열 재정렬](#문자열-재정렬)     | 2021.05.05 |
 | [문자열 압축](#문자열-압축)         | 2021.05.06 |
+| [뱀](#뱀)⭐                          | 2021.05.10 |
 
 <br>
 
@@ -46,3 +47,18 @@
 
 3번이 약간 헷갈렸지만 어렵지 않게 풀 수 있었다. 코드도 직관적이기 때문에 별도의 풀이는 생략!
 
+<br>
+
+<hr>
+
+⭐⭐⭐⭐⭐
+
+#### #뱀
+
+[뱀 소스 코드](https://github.com/hjyeon-n/java-for-coding-test/blob/master/Implementation/hjyeon-n/%EA%B8%B0%EC%B6%9C%20%EB%AC%B8%EC%A0%9C/%EB%B1%80.java)
+
+이전에 풀었던 문제이다. [풀이](https://github.com/hjyeon-n/Algorithm_study/blob/master/Problem%20Solving/2020.10/Implementation.md#%EB%B1%80)
+
+저번에 풀 땐 정말 쉽고 재밌다! 이러면서 풀었는데 이번엔 엥... 싶어서 저번에 풀었던 방식을 참고했다... 
+
+다음에 다시 풀어봐야겠다... 띠용...
