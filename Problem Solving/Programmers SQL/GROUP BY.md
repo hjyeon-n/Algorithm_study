@@ -6,6 +6,7 @@
 | [동명 동물 수 찾기](https://programmers.co.kr/learn/courses/30/lessons/59041) | [동명 동물 수 찾기](#동명-동물-수-찾기)                      |
 | [입양 시각 구하기(1)](https://programmers.co.kr/learn/courses/30/lessons/59412) | [입양 시각 구하기(1)](#입양-시각-구하기(1))                  |
 | [입양 시각 구하기(2)](https://programmers.co.kr/learn/courses/30/lessons/59413) | [입양 시각 구하기(2)](#입양-시각-구하기(2))                  |
+| [헤비 유저가 소유한 장소](https://programmers.co.kr/learn/courses/30/lessons/77487) | [헤비 유저가 소유한 장소](#헤비-유저가-소유한-장소)          |
 
 <br>
 
@@ -57,3 +58,18 @@ GROUP BY HOUR
 HAVING HOUR BETWEEN 0 AND 23
 ORDER BY HOUR;
 ```
+
+<br>
+
+#### #헤비 유저가 소유한 장소
+
+```mysql
+SELECT *
+FROM PLACES
+WHERE HOST_ID IN (
+                SELECT HOST_ID
+                FROM PLACES
+                GROUP BY HOST_ID
+                HAVING COUNT(*) >= 2);
+```
+
