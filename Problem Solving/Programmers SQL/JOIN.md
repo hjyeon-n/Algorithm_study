@@ -1,11 +1,12 @@
 # JOIN
 
-| 문제 링크                                                    | 문제 이름                                             |
-| ------------------------------------------------------------ | ----------------------------------------------------- |
-| [없어진 기록 찾기](https://programmers.co.kr/learn/courses/30/lessons/59042) | [없어진 기록 찾기](#없어진-기록-찾기)                 |
-| [있었는데요 없었습니다](https://programmers.co.kr/learn/courses/30/lessons/59043) | [있었는데요 없었습니다](#있었는데요-없었습니다)       |
-| [오랜 기간 보호한 동물(1)](https://programmers.co.kr/learn/courses/30/lessons/59044) | [오랜 기간 보호한 동물(1)](#오랜-기간-보호한-동물(1)) |
-| [보호소에서 중성화한 동물](https://programmers.co.kr/learn/courses/30/lessons/59045) | [보호소에서 중성화한 동물](#보호소에서-중성화한-동물) |
+| 문제 링크                                                    | 문제 이름                                                    |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [없어진 기록 찾기](https://programmers.co.kr/learn/courses/30/lessons/59042) | [없어진 기록 찾기](#없어진-기록-찾기)                        |
+| [있었는데요 없었습니다](https://programmers.co.kr/learn/courses/30/lessons/59043) | [있었는데요 없었습니다](#있었는데요-없었습니다)              |
+| [오랜 기간 보호한 동물(1)](https://programmers.co.kr/learn/courses/30/lessons/59044) | [오랜 기간 보호한 동물(1)](#오랜-기간-보호한-동물(1))        |
+| [보호소에서 중성화한 동물](https://programmers.co.kr/learn/courses/30/lessons/59045) | [보호소에서 중성화한 동물](#보호소에서-중성화한-동물)        |
+| [우유와 요거트가 담긴 장바구니](https://programmers.co.kr/learn/courses/30/lessons/62284) | [우유와 요거트가 담긴 장바구니](#우유와-요거트가-담긴-장바구니) |
 
 <br>
 
@@ -76,5 +77,17 @@ WHERE SEX_UPON_INTAKE LIKE '%Intact%' AND ANIMAL_ID IN (SELECT ANIMAL_ID
                                                 FROM ANIMAL_OUTS
                                                 WHERE SEX_UPON_OUTCOME NOT LIKE '%Intact%')
 ORDER BY ANIMAL_ID;
+```
+
+<br>
+
+#### #우유와 요거트가 담긴 장바구니
+
+```sql
+SELECT DISTINCT(CART_ID)
+FROM CART_PRODUCTS
+WHERE NAME = 'Yogurt' AND CART_ID IN (SELECT CART_ID
+                FROM CART_PRODUCTS
+                WHERE NAME = 'Milk');
 ```
 
