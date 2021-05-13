@@ -5,6 +5,7 @@
 | [섬 연결하기](#섬-연결하기)                   | [섬 연결하기](https://programmers.co.kr/learn/courses/30/lessons/42861) |
 | [삼각 달팽이](#삼각-달팽이)                   | [삼각 달팽이](https://programmers.co.kr/learn/courses/30/lessons/68645) |
 | [행렬 테두리 회전하기](#행렬-테두리-회전하기) | [행렬 테두리 회전하기](https://programmers.co.kr/learn/courses/30/lessons/77485?language=java)⭐ |
+| [다단계 칫솔 판매](#다단계-칫솔-판매)         | [다단계 칫솔 판매](https://programmers.co.kr/learn/courses/30/lessons/77486?language=java) |
 
 <br>
 
@@ -45,3 +46,18 @@
 백엔드 개발자 데브매칭 때 나왔던 문제이다. 그때는 컨디션이 너무 안 좋기도 했고 배열을 돌리는 걸 잘 못하는 편이라 [미세먼지 안녕!](https://github.com/hjyeon-n/Algorithm_study/blob/master/Problem%20Solving/2020.10/Implementation.md#%EB%AF%B8%EC%84%B8%EB%A8%BC%EC%A7%80-%EC%95%88%EB%85%95!) 풀이를 참고해서 풀었고 어렵지 않게 맞았다. 이번에는 의존하지 않고 스스로 풀었는데 약간의 고비가 있었지만 다행히 맞았다!
 
 이 부분은 설명할 것도 없기 때문에 풀이는 생략한다. 하지만 아직 서툰 부분이 남았으므로 다시 풀기를 바란다!
+
+<br>
+
+<hr>
+
+#### #다단계 칫솔 판매
+
+[다단계 칫솔 판매 소스 코드](https://github.com/hjyeon-n/Algorithm_study/blob/master/Programmers/2021.05/%EB%8B%A4%EB%8B%A8%EA%B3%84%20%EC%B9%AB%EC%86%94%20%ED%8C%90%EB%A7%A4.java)
+
+데브매칭 기출 문제이다. 당시에 아무 생각없이 풀었다가 맞혀서 당황했던 기억이 난다. 몇 개의 테스트케이스만 맞고 틀렸겠거니 했는데 그때와 비슷하게 풀었는데 정답처리가 된 걸 보니 틀린 풀이는 아니었나 보다! 체감 레벨2이다.
+
+1. 추천인을 매칭하고 각 판매원에 따른 금액을 정해야 하기 때문에 HashMap 2개를 생성하고 초기화한다.
+2. seller 배열을 순회하면서 해당 seller가 판매한 amount에 100을 곱해 판매 금액을 구한 뒤 10%를 제외한 금액을 수익으로 저장한다.
+3. 2번의 seller 추천인을 map에서 찾은 뒤 마찬가지로 share의 10퍼센트를 뺀 뒤 수익으로 더하고 다시 추천인을 찾는 과정을 반복한다.
+4. enroll의 사용자에 매칭되는 moneyMap 값을 찾아 출력한다.
