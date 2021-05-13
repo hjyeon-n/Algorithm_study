@@ -6,6 +6,7 @@
 | [문자열 재정렬](#문자열-재정렬)     | 2021.05.05 |
 | [문자열 압축](#문자열-압축)         | 2021.05.06 |
 | [뱀](#뱀)⭐                          | 2021.05.10 |
+| [치킨 배달](#치킨-배달)             | 2021.05.13 |
 
 <br>
 
@@ -62,3 +63,13 @@
 저번에 풀 땐 정말 쉽고 재밌다! 이러면서 풀었는데 이번엔 엥... 싶어서 저번에 풀었던 방식을 참고했다... 
 
 다음에 다시 풀어봐야겠다... 띠용...
+
+<br>
+
+<hr>
+
+#### #치킨 배달
+
+[치킨 배달 소스 코드](https://github.com/hjyeon-n/java-for-coding-test/blob/master/Implementation/hjyeon-n/%EA%B8%B0%EC%B6%9C%20%EB%AC%B8%EC%A0%9C/%EC%B9%98%ED%82%A8%20%EB%B0%B0%EB%8B%AC.java)
+
+예전에 풀었던 방식과 거의 동일하다. [풀이](https://github.com/hjyeon-n/Algorithm_study/blob/master/Problem%20Solving/2020.10/BFS%2C%20DFS.md#%EC%B9%98%ED%82%A8-%EB%B0%B0%EB%8B%AC)
