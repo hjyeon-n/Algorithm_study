@@ -1,11 +1,12 @@
 # Programmers
 
-| 문제 이름                                     | 문제 링크                                                    |
-| --------------------------------------------- | ------------------------------------------------------------ |
-| [섬 연결하기](#섬-연결하기)                   | [섬 연결하기](https://programmers.co.kr/learn/courses/30/lessons/42861) |
-| [삼각 달팽이](#삼각-달팽이)                   | [삼각 달팽이](https://programmers.co.kr/learn/courses/30/lessons/68645) |
-| [행렬 테두리 회전하기](#행렬-테두리-회전하기) | [행렬 테두리 회전하기](https://programmers.co.kr/learn/courses/30/lessons/77485?language=java)⭐ |
-| [다단계 칫솔 판매](#다단계-칫솔-판매)         | [다단계 칫솔 판매](https://programmers.co.kr/learn/courses/30/lessons/77486?language=java) |
+| 문제 이름                                      | 문제 링크                                                    |
+| ---------------------------------------------- | ------------------------------------------------------------ |
+| [섬 연결하기](#섬-연결하기)                    | [섬 연결하기](https://programmers.co.kr/learn/courses/30/lessons/42861) |
+| [삼각 달팽이](#삼각-달팽이)                    | [삼각 달팽이](https://programmers.co.kr/learn/courses/30/lessons/68645) |
+| [행렬 테두리 회전하기](#행렬-테두리-회전하기)⭐ | [행렬 테두리 회전하기](https://programmers.co.kr/learn/courses/30/lessons/77485?language=java) |
+| [다단계 칫솔 판매](#다단계-칫솔-판매)          | [다단계 칫솔 판매](https://programmers.co.kr/learn/courses/30/lessons/77486?language=java) |
+| [기둥과 보 설치](#기둥과-보-설치)⭐             | [기둥과 보 설치](https://programmers.co.kr/learn/courses/30/lessons/60061) |
 
 <br>
 
@@ -61,3 +62,49 @@
 2. seller 배열을 순회하면서 해당 seller가 판매한 amount에 100을 곱해 판매 금액을 구한 뒤 10%를 제외한 금액을 수익으로 저장한다.
 3. 2번의 seller 추천인을 map에서 찾은 뒤 마찬가지로 share의 10퍼센트를 뺀 뒤 수익으로 더하고 다시 추천인을 찾는 과정을 반복한다.
 4. enroll의 사용자에 매칭되는 moneyMap 값을 찾아 출력한다.
+
+<br>
+
+<hr>
+
+⭐⭐⭐⭐⭐
+
+#### #기둥과 보 설치
+
+[기둥과 보 설치 소스 코드](https://github.com/hjyeon-n/Algorithm_study/blob/master/Programmers/2021.05/%EA%B8%B0%EB%91%A5%EA%B3%BC%20%EB%B3%B4%20%EC%84%A4%EC%B9%98.java)
+
+2020 카카오 공채 기출 문제이다. 역시 어렵다^^...
+
+1시간 30분 정도 풀다가 안 되겠다 싶어서 풀이를 봤다. 결론적으로 말하면 접근 방식은 크게 틀리지 않았다. 다만, 전체적인 구조를 확인하는 대신 난 매번 옆 기둥과 보를 체크하는 방식으로 구현했는데 이 방식으로 하면 조건들이 많아져서 풀기가 어려워진다고 한다. 💦
+
+그래서 '이것이 코딩 테스트다' 교재의 풀이를 참고해서 풀었다.
+
+1. operate 값이 0 즉, 삭제 연산일 때 우선 삭제부터 수행하기 위해 build_frame 값과 같은 원소를 찾는다.
+2. 해당 인덱스의 원소를 tmp에 저장하고 graph에서 삭제한다.
+3. 전체 구조물이 규칙에 위배되지 않는지 possible 함수를 호출해 확인한다. 위배된다면 다시 tmp 값을 graph에 삽입한다.
+4. operate 값이 1 즉, 삽입 연산일 때 우선 삽입부터 수행하기 위해 build_frame 값을 graph에 삽입한다.
+5. 마찬가지로 3번의 과정을 거친다. 규칙에 위배된다면 다시 tmp 값을 graph에서 제거한다.
+6. graph의 값을 answer 배열로 옮겨준 뒤 문제 요구사항에 따라 정렬한 후 반환한다.
+
+<br>
+
+possible 함수 동작과정
+
+possible 함수는 규칙을 지켰을 때만 flag 값을 true로 초기화한 뒤, flag가 true이면 true를 반환하는 형식으로 진행한다.
+
+1. 기둥인 경우를 먼저 생각해 보자. 
+
+2. 바닥 위일 때는 세울 수 있으므로 true를 반환한다.
+
+3. '보의 한 쪽 끝 부분 위' 혹은 '다른 기둥 위'라면 true를 반환한다.
+
+4. flag 값이 true가 아니라면 false를 반환한다.
+
+5. 보인 경우를 생각해 보자.
+
+6. '한쪽 끝 부분이 기둥 위' 혹은 '양쪽 끝 부분이 다른 보와 동시에 연결'되었는지 확인하고 true를 반환한다.
+
+7. flag 값이 true가 아니라면 false를 반환한다.
+
+   
+
