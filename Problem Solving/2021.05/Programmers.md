@@ -8,6 +8,7 @@
 | [다단계 칫솔 판매](#다단계-칫솔-판매)          | [다단계 칫솔 판매](https://programmers.co.kr/learn/courses/30/lessons/77486?language=java) |
 | [기둥과 보 설치](#기둥과-보-설치)⭐             | [기둥과 보 설치](https://programmers.co.kr/learn/courses/30/lessons/60061) |
 | [입국심사](#입국심사)⭐                         | [입국심사](https://programmers.co.kr/learn/courses/30/lessons/43238?language=java) |
+| [순위](#순위)                                  | [순위](https://programmers.co.kr/learn/courses/30/lessons/49191?language=java) |
 
 <br>
 
@@ -131,4 +132,18 @@ possible 함수는 규칙을 지켰을 때만 flag 값을 true로 초기화한 �
 5. sum이 mid 값보다 작다면 최소 n명 이상은 심사해야 하는 문제의 요구 조건과 부합하지 않기 때문에 s를 mid + 1로 하여 다시 탐색한다.
 6. sum이 mid 값보다 크거나 같다면 n명 이상은 심사했을 때 소요 시간이기 때문에 Long의 최댓값으로 초기화한 answer와 값을 비교해 더 작은 값을 answer로 갱신한다.
 7. 이진탐색이 끝난 뒤 answer를 반환한다.
+
+<br>
+
+<hr>
+
+#### #순위
+
+[순위 소스 코드](https://github.com/hjyeon-n/Algorithm_study/blob/master/Programmers/2021.05/%EC%88%9C%EC%9C%84.java)
+
+[정확한 순위](https://github.com/hjyeon-n/Algorithm_study/blob/master/Problem%20Solving/java-for-coding-test/Shortest%20Path.md#%EC%A0%95%ED%99%95%ED%95%9C-%EC%88%9C%EC%9C%84)와 아주 유사한 문제이다. 문제 출처 링크가 깨져서 같은 문제인지는 확인이 불가능하지만 같은 문제인 것 같다는 생각이 든다.
+
+보자마자 플로이드라고는 생각했지만 마지막에 정확한 순위를 가리는 코드에서 감이 잡히지 않아 이전에 풀었던 코드를 좀 참고했다.
+
+풀이는 생략!
 
