@@ -127,10 +127,12 @@
 
 #### #양
 
-[양 소스 코드](https://github.com/hjyeon-n/Algorithm_study/blob/master/BOJ/2020.12/Solution_3184.java)
+[양 소스 코드](https://github.com/hjyeon-n/Algorithm_study/tree/master/BOJ/2020.12/Solution_3184)
 
 어려운 문제는 아니었지만 체감상 [단지번호붙이기](https://www.acmicpc.net/problem/2667)보다 어려웠는데 난이도는 실버2로 책정되어있다.
 
 단지 번호 붙이기가 1인 것을 세는 문제였다면, 양 문제는 #를 중심으로 구역이 나뉘고, 그 구역 내에서 양과 늑대의 수를 센 뒤에 값을 비교한 뒤에 살아남은 수만큼 업데이트를 해 주면 된다.
 
 어려운 문제는 아니었으니 풀이는 생략!
+
+➕ 2021.10.04 추가
