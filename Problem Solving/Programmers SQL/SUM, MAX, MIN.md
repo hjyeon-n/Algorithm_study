@@ -10,8 +10,9 @@
 <br>
 
 <hr>
-
 #### #최댓값 구하기
+
+`Oracle, MySQL`
 
 ```sql
 SELECT MAX(DATETIME)
@@ -22,6 +23,8 @@ FROM ANIMAL_INS
 
 #### #최솟값 구하기
 
+`Oracle, MySQL`
+
 ```sql
 SELECT MIN(DATETIME)
 FROM ANIMAL_INS;
@@ -31,6 +34,8 @@ FROM ANIMAL_INS;
 
 #### #동물 수 구하기
 
+`Oracle, MySQL`
+
 ```sql
 SELECT COUNT(*)
 FROM ANIMAL_INS;
@@ -39,6 +44,8 @@ FROM ANIMAL_INS;
 <br>
 
 #### #중복 제거하기
+
+`Oracle, MySQL`
 
 ```sql
 SELECT COUNT(DISTINCT NAME)
