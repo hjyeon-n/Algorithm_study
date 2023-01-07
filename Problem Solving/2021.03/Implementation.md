@@ -1,15 +1,15 @@
 # Implementation
 
-| 문제 번호                                      | 이름                            |
-| :--------------------------------------------- | ------------------------------- |
-| [2304](https://www.acmicpc.net/problem/2304)   | [창고 다각형](#창고-다각형)     |
-| [15683](https://www.acmicpc.net/problem/15683) | [감시](#감시)⭐                  |
-| [17135](https://www.acmicpc.net/problem/17135) | [캐슬 디펜스](#캐슬-디펜스)     |
-| [1107](https://www.acmicpc.net/problem/1107)   | [리모컨](#리모컨)               |
-| [12904](https://www.acmicpc.net/problem/12904) | [A와 B](#A와-B)                 |
-| [1026](https://www.acmicpc.net/problem/1026)   | [보물](#보물)                   |
+| 문제 번호                                          | 이름                  |
+|:---------------------------------------------- | ------------------- |
+| [2304](https://www.acmicpc.net/problem/2304)   | [창고 다각형](#창고-다각형)   |
+| [15683](https://www.acmicpc.net/problem/15683) | [감시](#감시)⭐          |
+| [17135](https://www.acmicpc.net/problem/17135) | [캐슬 디펜스](#캐슬-디펜스)   |
+| [1107](https://www.acmicpc.net/problem/1107)   | [리모컨](#리모컨)         |
+| [12904](https://www.acmicpc.net/problem/12904) | [A와 B](#A와-B)       |
+| [1026](https://www.acmicpc.net/problem/1026)   | [보물](#보물)           |
 | [1051](https://www.acmicpc.net/problem/1051)   | [숫자 정사각형](#숫자-정사각형) |
-| [14891](https://www.acmicpc.net/problem/14891) | [톱니바퀴](#톱니바퀴)           |
+| [14891](https://www.acmicpc.net/problem/14891) | [톱니바퀴](#톱니바퀴)       |
 
 <br>
 
@@ -72,7 +72,7 @@
 
 1번은 총 4방향의 경우의 수를 가지고 차례대로 하나씩 서, 북, 동, 남으로 진행하면 된다.
 
-``` java
+```java
 traversal(tmp, x, y, k);
 ```
 
@@ -93,7 +93,7 @@ traversal(tmp, x, y, k + 2);
 
 3번 CCTV는 네 방향으로 회전이 가능하며, 서북 / 북동 / 동남 / 남서로 두 방향씩 진행하면 된다. 이때 인덱스가 벗어날 수도 있기 때문에 mod 연산을 사용한다. 예를 들어 k가 3일 때 k + 1이 4이기 때문에 인덱스 에러가 날 수 있다. 따라서 방향의 크기 즉, 동서남북인 4의 길이로 mod 연산을 하면 k는 3과 0 그러니까 남과 서 방향임을 알 수 있다.
 
-``` java
+```java
 traversal(tmp, x, y, k);
 traversal(tmp, x, y, (k + 1) % 4);
 ```
@@ -104,7 +104,7 @@ traversal(tmp, x, y, (k + 1) % 4);
 
 4번 CCTV도 네 방향으로 회전이 가능하면 서북동 / 북동남 / 동남서 / 남서북 으로 세 방향씩 진행하면 된다. 마찬가지로 mod 연산을 사용해 인덱스를 조정해준다.
 
-``` java
+```java
 traversal(tmp, x, y, k);
 traversal(tmp, x, y, (k + 1) % 4);
 traversal(tmp, x, y, (k + 2) % 4);
@@ -116,7 +116,7 @@ traversal(tmp, x, y, (k + 2) % 4);
 
 5번 CCTV는 한 방향만 가능하다. 동시에 네 방향을 탐색하면 된다.
 
-``` java
+```java
 traversal(tmp, x, y, 0);
 traversal(tmp, x, y, 1);
 traversal(tmp, x, y, 2);
@@ -206,6 +206,14 @@ traversal(tmp, x, y, 3);
 #### #A와 B
 
 [A와 B 소스 코드](https://github.com/hjyeon-n/Algorithm_study/tree/master/BOJ/2021.03)
+
+📌 2023.01.07 업데이트
+
+인간은 정말 변하지 않는구만ㅎㅎ... BFS로 풀다가 또 똑같이 메모리 초과가 나서 뭐지 싶어서 이 풀이를 보고 다시 풀어서 정답처리 됐다...ㅋㅋㅋㅋ 문제 조건을 똑바로 읽는 습관을 들입시다... 
+
+---
+
+
 
 보자마자 BFS로 풀어야겠구만! 해서 호기롭게 풀었다가 틀렸다. 난 두 번째 연산 방법에서 문자열을 StringBuffer를 통해서 뒤집었는데 메모리 초과가 나길래 거기서 문제가 되는 줄 알고 직접 문자열을 뒤집는 연산을 구현했는데도 시간초과가 났다.
 
