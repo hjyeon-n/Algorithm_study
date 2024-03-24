@@ -58,6 +58,25 @@ for (int i : list) {
 
 <br>
 
+- copyOf : 깊은 복사
+0부터 원하는 length까지 배열의 깊은 복사를 할 수 있다.
+단순 복사를 원한다면, clone을 사용하면 된다.
+
+```java
+int[] a = { 1, 2, 3, 4 };
+int[] b = Arrays.copyOf(a, 2);
+
+for (int i = 0; i < b.length; i++) {
+     System.out.print(b[i] + " ");
+}
+```
+
+```java
+// 출력
+1, 2
+```
+<br>
+
 ### #Collection
 
 컬렉션 계층 구조의 루트 인터페이스로, 하위 인터페이스에는 List, Map, Set 등 다양한 컬렉션들이 존재한다. Collection에 포함된 메소드는 하위 인터페이스에서도 사용이 가능하다.
