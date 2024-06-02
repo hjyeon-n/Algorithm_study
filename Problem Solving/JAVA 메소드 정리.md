@@ -2,7 +2,7 @@
 
 TIL에도 정리되어있지만 더 보기 편하라고 여기에도 정리해 둔다! (2021.03.26)
 
-| 바로가기 😎                  |
+| 바로가기 😎                     |
 | --------------------------- |
 | [Arrays](#Arrays)           |
 | [Collection](#Collection)   |
@@ -13,8 +13,8 @@ TIL에도 정리되어있지만 더 보기 편하라고 여기에도 정리해 �
 | [Stack](#Stack)             |
 | [Queue](#Queue)             |
 | [Math](#Math)               |
-| [자료형](#자료형)           |
-| [문자열](#문자열)           |
+| [자료형](#자료형)                 |
+| [문자열](#문자열)                 |
 
 <br>
 
@@ -59,8 +59,8 @@ for (int i : list) {
 <br>
 
 - copyOf : 깊은 복사
-0부터 원하는 length까지 배열의 깊은 복사를 할 수 있다.
-단순 복사를 원한다면, clone을 사용하면 된다.
+  0부터 원하는 length까지 배열의 깊은 복사를 할 수 있다.
+  단순 복사를 원한다면, clone을 사용하면 된다.
 
 ```java
 int[] a = { 1, 2, 3, 4 };
@@ -75,7 +75,43 @@ for (int i = 0; i < b.length; i++) {
 // 출력
 1, 2
 ```
+
 <br>
+
++ fill : 배열의 값 일괄 초기화
+
+```java
+// 일차원 배열 초기화
+int[] arr = new int[5];
+Arrays.fill(arr, -1);
+
+for (int i = 0; i < arr.length; i++) {
+    System.out.println(arr[i] + " ");
+}
+```
+
+```java
+// 출력
+-1, -1, -1, -1, -1
+```
+
+```java
+// 이차원 배열 초기화
+int map[][] = new int[3][2];
+for (int i = 0; i < 3; i++) {
+     Arrays.fill(arr[i], -1);
+}
+
+for (int i = 0; i < 3; i++) {
+     System.out.println(Arrays.toString(arr[i]));
+}
+```
+
+```java
+[-1, -1]
+[-1, -1]
+[-1, -1]
+```
 
 ### #Collection
 
@@ -106,7 +142,7 @@ Integer[] arr = {5, 26, 1, 74, 59, 38};
 ArrayList<Integer> list = new ArrayList<Integer>(Arrays.asList(arr));
 
 Collections.sort(list);
-        
+
 for (int i : list) {
     System.out.print(i + " ");
 }
@@ -145,9 +181,9 @@ ArrayList<String> list = new ArrayList<String>();
 list.add("one");
 list.add("two");
 list.add("three");
-      
+
 for (String str : list) {
-			System.out.print(str + " ");
+            System.out.print(str + " ");
 }
 ```
 
@@ -172,9 +208,9 @@ three
 <br>
 
 - remove : 특정 값 삭제
-
+  
   ✅ remove(int index) : 인덱스에 위치하는 값 삭제
-
+  
   ✅ remove(Object o) : 특정 객체 삭제
 
 ```java
@@ -313,7 +349,7 @@ set.add("two");
 
 Iterator<String> iter = set.iterator();
 while(iter.hasNext()) {
-			System.out.println(iter.next());
+            System.out.println(iter.next());
 }
 ```
 
@@ -812,4 +848,3 @@ System.out.println(split[1]);
 Hello
 World
 ```
-
